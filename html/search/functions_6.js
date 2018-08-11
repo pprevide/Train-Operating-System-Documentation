@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['k_5fmemcmp',['k_memcmp',['../kernel_8h.html#af222ffdb13057ff818cc0422e6499929',1,'k_memcmp(const void *b1, const void *b2, int len):&#160;stdlib.c'],['../stdlib_8c.html#af222ffdb13057ff818cc0422e6499929',1,'k_memcmp(const void *b1, const void *b2, int len):&#160;stdlib.c']]],
+  ['k_5fmemcpy',['k_memcpy',['../kernel_8h.html#aa975844c3752be598cbe656c3be7c79d',1,'k_memcpy(void *dst, const void *src, int len):&#160;stdlib.c'],['../stdlib_8c.html#aa975844c3752be598cbe656c3be7c79d',1,'k_memcpy(void *dst, const void *src, int len):&#160;stdlib.c']]],
+  ['k_5fmemset',['k_memset',['../kernel_8h.html#a61623fea0b3d96da57e082b7d9c032ed',1,'k_memset(const void *b, char fill, int len):&#160;stdlib.c'],['../stdlib_8c.html#a61623fea0b3d96da57e082b7d9c032ed',1,'k_memset(const void *b, char fill, int len):&#160;stdlib.c']]],
+  ['k_5fstrlen',['k_strlen',['../kernel_8h.html#ad677fd23d0774acf0b858096f14c54eb',1,'k_strlen(const char *str):&#160;stdlib.c'],['../stdlib_8c.html#ad677fd23d0774acf0b858096f14c54eb',1,'k_strlen(const char *str):&#160;stdlib.c']]],
+  ['kernel_5fmain',['kernel_main',['../main_8c.html#a017bb803a0e9e7782bff19e961ec700d',1,'main.c']]],
+  ['keyb_5fget_5fkeystroke',['keyb_get_keystroke',['../kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34',1,'keyb_get_keystroke(int window_id, BOOL block):&#160;keyb.c'],['../keyb_8c.html#a5703cd456b7a86eac9a03b4dce660b34',1,'keyb_get_keystroke(int window_id, BOOL block):&#160;keyb.c']]],
+  ['kprintf',['kprintf',['../kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a',1,'kprintf(const char *fmt,...):&#160;window.c'],['../window_8c.html#a199a1f701f4cc4fd1c3ff7903a102d7a',1,'kprintf(const char *fmt,...):&#160;window.c']]]
+];
