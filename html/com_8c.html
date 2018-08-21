@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">com.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Serial port driver and the COM service.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kernel_8h.html">kernel.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -105,11 +108,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3235fc563e60489c99c3a3959ead5f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="com_8c.html#a3235fc563e60489c99c3a3959ead5f24">com_port</a></td></tr>
+<tr class="memitem:a3235fc563e60489c99c3a3959ead5f24"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="com_8c.html#a3235fc563e60489c99c3a3959ead5f24">com_port</a></td></tr>
 <tr class="memdesc:a3235fc563e60489c99c3a3959ead5f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of the PORTs owned by the COM process to receive messages from user processes.  <a href="#a3235fc563e60489c99c3a3959ead5f24">More...</a><br /></td></tr>
 <tr class="separator:a3235fc563e60489c99c3a3959ead5f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Serial port driver and the COM service. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a667529bb896d3107cb5d62f608dceaa5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -124,7 +129,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the COM subsystem of TOS. </p>
-<p>This function initializes the UART ("Universal Asynchronous Receiver/Transmitter") that implements the RS232 protocol for serial line communication used by TOS. This function also creates the COM process by calling <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>. The global variable com_port is set to point to the PORT (not to be confused with an I/O port) that is owned by the COM process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a92db94a5c077be9037215e3638a6a259" title="Typedef for the data structure that holds the contents of a COM message. ">COM_Message</a>, <a class="el" href="kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24" title="One of the PORTs owned by the COM process to receive messages from user processes. ">com_port</a> </dd></dl>
+<p>This function initializes the UART ("Universal Asynchronous Receiver/Transmitter") that implements the RS232 protocol for serial line communication used by TOS. This function also creates the COM process by calling <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>. The global variable com_port is set to point to the PORT (not to be confused with an I/O port) that is owned by the COM process. </p><dl class="section see"><dt>See also</dt><dd>COM_Message, <a class="el" href="kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24" title="One of the PORTs owned by the COM process to receive messages from user processes. ">com_port</a> </dd></dl>
 
 </div>
 </div>
@@ -134,13 +139,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_8h.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a> com_port</td>
+          <td class="memname">PORT com_port</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>One of the PORTs owned by the COM process to receive messages from user processes. </p>
-<p>This global variable refers to the PORT which is owned by the COM process and receives messages (of type COM_Message) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in <a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>. Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>, <a class="el" href="kernel_8h.html#a92db94a5c077be9037215e3638a6a259" title="Typedef for the data structure that holds the contents of a COM message. ">COM_Message</a>, <a class="el" href="struct__COM__Message.html" title="A struct that holds the contents of a COM message. ">_COM_Message</a> </dd></dl>
+<p>This global variable refers to the PORT which is owned by the COM process and receives messages (of type COM_Message) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in <a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>. Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>, COM_Message, <a class="el" href="struct__COM__Message.html" title="A struct that holds the contents of a COM message. ">_COM_Message</a> </dd></dl>
 
 </div>
 </div>

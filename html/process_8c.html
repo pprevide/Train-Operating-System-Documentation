@@ -95,14 +95,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">process.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Management of TOS processes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kernel_8h.html">kernel.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ba4e1733cef92f340ccca9e2c306b7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#a1ba4e1733cef92f340ccca9e2c306b7a">create_process</a> (void(*ptr_to_new_proc)(<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>), int prio, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a> param, char *name)</td></tr>
+<tr class="memitem:a1ba4e1733cef92f340ccca9e2c306b7a"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#a1ba4e1733cef92f340ccca9e2c306b7a">create_process</a> (void(*ptr_to_new_proc)(PROCESS, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>), int prio, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a> param, char *name)</td></tr>
 <tr class="memdesc:a1ba4e1733cef92f340ccca9e2c306b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered, returns a NULL pointer).  <a href="#a1ba4e1733cef92f340ccca9e2c306b7a">More...</a><br /></td></tr>
 <tr class="separator:a1ba4e1733cef92f340ccca9e2c306b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba03cb110510187d40043ffd1352d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#a0ba03cb110510187d40043ffd1352d57">print_process</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> p)</td></tr>
+<tr class="memitem:a0ba03cb110510187d40043ffd1352d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#a0ba03cb110510187d40043ffd1352d57">print_process</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd, PROCESS p)</td></tr>
 <tr class="memdesc:a0ba03cb110510187d40043ffd1352d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a copy of the calling process.  <a href="#a0ba03cb110510187d40043ffd1352d57">More...</a><br /></td></tr>
 <tr class="separator:a0ba03cb110510187d40043ffd1352d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae816c773af94e99847e12d847fe1b252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#ae816c773af94e99847e12d847fe1b252">print_all_processes</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd)</td></tr>
@@ -114,19 +117,21 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa13757c49c1256b766ebc3d259ed94a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578">PCB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> [<a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014">MAX_PROCS</a>]</td></tr>
+<tr class="memitem:aa13757c49c1256b766ebc3d259ed94a3"><td class="memItemLeft" align="right" valign="top">PCB&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> [<a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014">MAX_PROCS</a>]</td></tr>
 <tr class="memdesc:aa13757c49c1256b766ebc3d259ed94a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of twenty PCB structs.  <a href="#aa13757c49c1256b766ebc3d259ed94a3">More...</a><br /></td></tr>
 <tr class="separator:aa13757c49c1256b766ebc3d259ed94a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Management of TOS processes. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a1ba4e1733cef92f340ccca9e2c306b7a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_8h.html#a6dde884e19bdc8f342ffec8fc17e7c91">PORT</a> create_process </td>
+          <td class="memname">PORT create_process </td>
           <td>(</td>
-          <td class="paramtype">void(*)(<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>)&#160;</td>
+          <td class="paramtype">void(*)(PROCESS, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>)&#160;</td>
           <td class="paramname"><em>new_proc</em>, </td>
         </tr>
         <tr>
@@ -166,7 +171,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>PORT The port owned by the newly-created process. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a6dde884e19bdc8f342ffec8fc17e7c91" title="This typedef creates the alternative name PORT for a pointer to a _PORT_DEF struct. ">PORT</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d" title="A typedef that creates the alternative name PARAM for an unsigned integer type. ">PARAM</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Pointer to a _PCB struct, also known as a PCB. ">PROCESS</a>, <a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578" title="A typedef that creates PCB as an alternative name for the data type of _PCB struct. ">PCB</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PORT__DEF.html" title="A data structure that holds the members associated with a TOS process&#39;s port, used for inter-process ...">_PORT_DEF</a>, <a class="el" href="kernel_8h.html#a5d4f5821d92bb871d64da5a1290516f9" title="A typedef for a data structure which describes a PORT. ">PORT_DEF</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d" title="A typedef that creates the alternative name PARAM for an unsigned integer type. ">PARAM</a>, PROCESS, PCB, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PORT__DEF.html" title="A data structure that holds the members associated with a TOS process&#39;s port, used for inter-process ...">_PORT_DEF</a>, PORT_DEF </dd></dl>
 
 </div>
 </div>
@@ -184,7 +189,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the global variables associated with TOS process creation. </p>
-<p>This function clears all the entries in the pcb[] array; prepares the doubly-linked list of entries so that each pcb entry contains the address of the next available PCB slot; prepares the pcb entry for the boot process, and sets the global variable active_proc (used throughout TOS) to the first entry of the pcb array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578" title="A typedef that creates PCB as an alternative name for the data type of _PCB struct. ">PCB</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Pointer to a _PCB struct, also known as a PCB. ">PROCESS</a> </dd></dl>
+<p>This function clears all the entries in the pcb[] array; prepares the doubly-linked list of entries so that each pcb entry contains the address of the next available PCB slot; prepares the pcb entry for the boot process, and sets the global variable active_proc (used throughout TOS) to the first entry of the pcb array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, PCB, PROCESS </dd></dl>
 
 </div>
 </div>
@@ -209,7 +214,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Creates and returns a copy of the calling process. ">print_process()</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578" title="A typedef that creates PCB as an alternative name for the data type of _PCB struct. ">PCB</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Creates and returns a copy of the calling process. ">print_process()</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, PCB </dd></dl>
 
 </div>
 </div>
@@ -226,7 +231,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
+          <td class="paramtype">PROCESS&#160;</td>
           <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
@@ -238,7 +243,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates and returns a copy of the calling process. </p>
-<p>This function initializes a new TOS process to be an exact copy of the calling process. The program code, heap, and stack are all copied. The new process occupies a different PCB entry and has a different stack frame than the calling process and is in fact a distinct process from the calling process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>, <a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578" title="A typedef that creates PCB as an alternative name for the data type of _PCB struct. ">PCB</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a></dd></dl>
+<p>This function initializes a new TOS process to be an exact copy of the calling process. The program code, heap, and stack are all copied. The new process occupies a different PCB entry and has a different stack frame than the calling process and is in fact a distinct process from the calling process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>, PCB, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a></dd></dl>
 <p>Prints the details of the specified TOS process</p>
 <p>The name, state, and priority of the TOS process is printed, with a special character (e.g., an asterisk) indicating if the process is currently the running process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -257,7 +262,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_8h.html#a5350bbf84ca71e7d5e966feef1a70578">PCB</a> pcb[<a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014">MAX_PROCS</a>]</td>
+          <td class="memname">PCB pcb[<a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014">MAX_PROCS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

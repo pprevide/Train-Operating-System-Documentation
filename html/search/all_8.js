@@ -10,7 +10,6 @@ var searchData=
   ['keyb_2ec',['keyb.c',['../keyb_8c.html',1,'']]],
   ['keyb_5fget_5fkeystroke',['keyb_get_keystroke',['../kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34',1,'keyb_get_keystroke(int window_id, BOOL block):&#160;keyb.c'],['../keyb_8c.html#a5703cd456b7a86eac9a03b4dce660b34',1,'keyb_get_keystroke(int window_id, BOOL block):&#160;keyb.c']]],
   ['keyb_5firq',['KEYB_IRQ',['../kernel_8h.html#ab1cd1e736761fd2efc00615782a271e6',1,'kernel.h']]],
-  ['keyb_5fmessage',['Keyb_Message',['../kernel_8h.html#a99f6c2d236ae5bfe84e6b69564f74b78',1,'kernel.h']]],
   ['keyb_5fport',['keyb_port',['../kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac',1,'keyb_port():&#160;keyb.c'],['../keyb_8c.html#afc32d8217e2da0da36dc851cbc97cdac',1,'keyb_port():&#160;keyb.c']]],
   ['kprintf',['kprintf',['../kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a',1,'kprintf(const char *fmt,...):&#160;window.c'],['../window_8c.html#a199a1f701f4cc4fd1c3ff7903a102d7a',1,'kprintf(const char *fmt,...):&#160;window.c']]]
 ];

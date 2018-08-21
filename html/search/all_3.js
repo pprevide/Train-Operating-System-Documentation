@@ -8,7 +8,6 @@ var searchData=
   ['com1_5fport',['COM1_PORT',['../kernel_8h.html#a8982f081d8608e775b0739cde65373d5',1,'kernel.h']]],
   ['com2_5firq',['COM2_IRQ',['../kernel_8h.html#ab02d84052a299a0c207a8ea4c1a5636d',1,'kernel.h']]],
   ['com2_5fport',['COM2_PORT',['../kernel_8h.html#a88373c3e34a242356333ec08389eae54',1,'kernel.h']]],
-  ['com_5fmessage',['COM_Message',['../kernel_8h.html#a92db94a5c077be9037215e3638a6a259',1,'kernel.h']]],
   ['com_5fport',['com_port',['../kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24',1,'com_port():&#160;com.c'],['../com_8c.html#a3235fc563e60489c99c3a3959ead5f24',1,'com_port():&#160;com.c']]],
   ['create_5fnew_5fport',['create_new_port',['../kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8',1,'create_new_port(PROCESS proc):&#160;ipc.c'],['../ipc_8c.html#a255f0485de01e390d80056a6f0549bf3',1,'create_new_port(PROCESS owner):&#160;ipc.c']]],
   ['create_5fport',['create_port',['../kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d',1,'create_port():&#160;ipc.c'],['../ipc_8c.html#ae9d255ea2fe47c5ee2c757bf6416227d',1,'create_port():&#160;ipc.c']]],

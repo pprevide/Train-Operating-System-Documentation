@@ -29,6 +29,73 @@ Everything else is provided for you, and it is recommended that you look around 
 \brief Header file for the TOS kernel.
 \details This header file defines many variables, typedefs, structs, and functions that are used throughout the TOS API.
 */
+
+/*! 
+\file com.c
+\brief Serial port driver and the COM service
+*/
+/*! 
+\file dispatch.c
+\brief Task scheduling
+*/
+/*! 
+\file inout.c
+\brief Reading and writing of bytes through the serial port
+*/
+/*! 
+\file intr.c
+\brief Interrupt handling and the interrupt descriptor table
+*/
+/*! 
+\file ipc.c
+\brief Inter-process communication
+*/
+/*! 
+\file keyb.c
+\brief The keyboard driver
+*/
+/*! 
+\file main.c
+\brief Implements the entry point for TOS operation
+*/
+/*! 
+\file malloc.c
+\brief Dynamic memory management
+*/
+/*! 
+\file mem.c
+\brief Basic operations for memory access
+*/
+/*! 
+\file null.c
+\brief Implementation details of the null process
+*/
+/*! 
+\file pong.c
+\brief Implementation details of the pong game
+*/
+/*! 
+\file process.c
+\brief Management of TOS processes
+*/
+/*! 
+\file stdlib.c
+\brief Implementations of standard C library functions
+*/
+/*! 
+\file timer.c
+\brief The timer service
+*/
+/*! 
+\file window.c
+\brief The windowing system
+*/
+/*! 
+\file wm.c
+\brief Advanced window management
+*/
+
+
 /* TOS_ENDIF never */
 
 #ifndef __KERNEL__
@@ -1085,10 +1152,13 @@ extern PORT timer_port;
 \sa _Timer_Message, sleep()
 */
 /* TOS_ENDIF never */
-typedef struct _Timer_Message 
+
+struct _Timer_Message 
 {
     int num_of_ticks;
-} Timer_Message;
+}; 
+
+typedef struct _Timer_Message Timer_Message;
 
 /* TOS_IFDEF never */
 /*!
@@ -1194,12 +1264,15 @@ extern PORT com_port;
 \sa _COM_Message, com_port
 */
 /* TOS_ENDIF never */
-typedef struct _COM_Message 
+
+struct _COM_Message 
 {
     char* output_buffer;
     char* input_buffer;
     int   len_input_buffer;
-} COM_Message;
+};
+
+typedef struct _COM_Message COM_Message;
 
 /* TOS_IFDEF never */
 /*!
@@ -1262,11 +1335,14 @@ extern PORT keyb_port;
 \sa _Keyb_Message, keyb_get_keystroke(), 
 */
 /* TOS_ENDIF never */
-typedef struct _Keyb_Message {
+
+struct _Keyb_Message {
     int window_id;
     BOOL block;
     char* key_buffer;
-} Keyb_Message;
+};
+
+typedef struct _Keyb_Message Keyb_Message;
 
 /* TOS_IFDEF never */
 /*!
