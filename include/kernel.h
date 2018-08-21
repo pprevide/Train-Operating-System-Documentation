@@ -34,7 +34,18 @@ Everything else is provided for you, and it is recommended that you look around 
 #ifndef __KERNEL__
 #define __KERNEL__
 
-#inO
+#include <assert.h>
+#include <stdarg.h>
+
+#define TRUE   1
+#define FALSE  0
+
+
+#ifndef NULL
+#define NULL   ((void *) 0)
+#endif
+
+
 /* TOS_IFDEF never */
 /*! 
 \brief Typedef for true/false values, as an integer.
