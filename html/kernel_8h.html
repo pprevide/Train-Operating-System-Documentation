@@ -112,6 +112,15 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDT.html">IDT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data structure that describes an x86 interrupt.  <a href="structIDT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Timer__Message.html">Timer_Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct containing the information of the message which is sent by client processes to the timer service.  <a href="struct__Timer__Message.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__COM__Message.html">COM_Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds the contents of a COM message.  <a href="struct__COM__Message.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Keyb__Message.html">Keyb_Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds the contents of a message to the keyboard process.  <a href="struct__Keyb__Message.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -342,9 +351,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a88ada49c1954d38252049786595d9a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f">init_interrupts</a> ()</td></tr>
 <tr class="memdesc:a88ada49c1954d38252049786595d9a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the interrupt subsystem of TOS.  <a href="#a88ada49c1954d38252049786595d9a5f">More...</a><br /></td></tr>
 <tr class="separator:a88ada49c1954d38252049786595d9a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8ece954c7a70eb04493321c6e46f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c">sleep</a> (int num_of_ticks)</td></tr>
-<tr class="memdesc:a2d8ece954c7a70eb04493321c6e46f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks.  <a href="#a2d8ece954c7a70eb04493321c6e46f3c">More...</a><br /></td></tr>
-<tr class="separator:a2d8ece954c7a70eb04493321c6e46f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a38016ab7b2931bcb950e0c6f3ba3f342">init_timer</a> ()</td></tr>
 <tr class="memdesc:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the timer process.  <a href="#a38016ab7b2931bcb950e0c6f3ba3f342">More...</a><br /></td></tr>
 <tr class="separator:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,9 +360,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a5c698260d261a6984816b27db7a3398e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5c698260d261a6984816b27db7a3398e">outportb</a> (unsigned short port, unsigned char value)</td></tr>
 <tr class="memdesc:a5c698260d261a6984816b27db7a3398e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the byte value to the I/O port designated by the argument port.  <a href="#a5c698260d261a6984816b27db7a3398e">More...</a><br /></td></tr>
 <tr class="separator:a5c698260d261a6984816b27db7a3398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a667529bb896d3107cb5d62f608dceaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5">init_com</a> ()</td></tr>
-<tr class="memdesc:a667529bb896d3107cb5d62f608dceaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the COM subsystem of TOS.  <a href="#a667529bb896d3107cb5d62f608dceaa5">More...</a><br /></td></tr>
-<tr class="separator:a667529bb896d3107cb5d62f608dceaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5703cd456b7a86eac9a03b4dce660b34"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34">keyb_get_keystroke</a> (int window_id, <a class="el" href="kernel_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> block)</td></tr>
 <tr class="memdesc:a5703cd456b7a86eac9a03b4dce660b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the keyboard process for the next keystroke.  <a href="#a5703cd456b7a86eac9a03b4dce660b34">More...</a><br /></td></tr>
 <tr class="separator:a5703cd456b7a86eac9a03b4dce660b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1091,24 +1094,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a667529bb896d3107cb5d62f608dceaa5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_com </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the COM subsystem of TOS. </p>
-<p>This function initializes the UART ("Universal Asynchronous Receiver/Transmitter") that implements the RS232 protocol for serial line communication used by TOS. This function also creates the COM process by calling <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>. The global variable com_port is set to point to the PORT (not to be confused with an I/O port) that is owned by the COM process. </p><dl class="section see"><dt>See also</dt><dd>COM_Message, <a class="el" href="kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24" title="One of the PORTs owned by the COM process to receive messages from user processes. ">com_port</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a6b9a52d032bce03b717484ec230ece45"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1267,7 +1252,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the timer process. </p>
-<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
+<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
 
 </div>
 </div>
@@ -2239,31 +2224,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2d8ece954c7a70eb04493321c6e46f3c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sleep </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_of_ticks</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks. </p>
-<p>This function is a wrapper that client processes use to create and send a Timer_Message to the timer process, indicating that the client process wishes to sleep for the number of timer ticks indicated by the argument num_of_ticks. This integer is contained in the Timer_Message that is generated and sent to the timer process. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_of_ticks</td><td>Integer specifying the number of timer ticks that the calling process wants to sleep. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="af85f715505e3c0142953633dc5f7b763"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2601,7 +2561,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>One of the PORTs owned by the COM process to receive messages from user processes. </p>
-<p>This global variable refers to the PORT which is owned by the COM process and receives messages (of type COM_Message) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in <a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>. Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>, COM_Message, <a class="el" href="struct__COM__Message.html" title="A struct that holds the contents of a COM message. ">_COM_Message</a> </dd></dl>
+<p>This global variable refers to the PORT which is owned by the COM process and receives messages (of type COM_Message) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in init_com(). Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd>init_com(), COM_Message, <a class="el" href="struct__COM__Message.html" title="A struct that holds the contents of a COM message. ">_COM_Message</a> </dd></dl>
 
 </div>
 </div>
@@ -2691,7 +2651,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>PORT owned by the timer process. </p>
-<p>To use the timer service, a client process sends a Timer_Message to this PORT indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this PORT whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
+<p>To use the timer service, a client process sends a Timer_Message to this PORT indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this PORT whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
 
 </div>
 </div>

@@ -1146,22 +1146,6 @@ extern PORT timer_port;
 
 /* TOS_IFDEF never */
 /*!
-\typedef Timer_Message
-\brief A typedef for a data structure which describes the contents of a timer message.  
-\details This typedef specifies Timer_Message as an alternative name for the struct _Timer_Message data type.
-\sa _Timer_Message, sleep()
-*/
-/* TOS_ENDIF never */
-
-struct _Timer_Message 
-{
-    int num_of_ticks;
-}; 
-
-typedef struct _Timer_Message Timer_Message;
-
-/* TOS_IFDEF never */
-/*!
 \struct _Timer_Message
 \brief A struct containing the information of the message which is sent by client processes to the timer service.
 \details The only member of this struct is the number of timer ticks that the client process wants to sleep.
@@ -1177,6 +1161,22 @@ typedef struct _Timer_Message Timer_Message;
 \sa Timer_Message, _Timer_Message
 */
 /* TOS_ENDIF never */
+struct _Timer_Message 
+{
+    int num_of_ticks;
+}; 
+
+/* TOS_IFDEF never */
+/*!
+\typedef Timer_Message
+\brief A typedef for a data structure which describes the contents of a timer message.  
+\details This typedef specifies Timer_Message as an alternative name for the struct _Timer_Message data type.
+\sa sleep()
+*/
+/* TOS_ENDIF never */
+typedef struct _Timer_Message Timer_Message;
+
+
 void sleep(int num_of_ticks);
 
 /* TOS_IFDEF never */
@@ -1258,24 +1258,6 @@ extern PORT com_port;
 
 /* TOS_IFDEF never */
 /*!
-\typedef COM_Message
-\brief Typedef for the data structure that holds the contents of a COM message.
-\details This typedef allows COM_Message to serve as an alternative name for the struct _COM_Message.  The underlying data structure holds the contents of the message received by the COM process.
-\sa _COM_Message, com_port
-*/
-/* TOS_ENDIF never */
-
-struct _COM_Message 
-{
-    char* output_buffer;
-    char* input_buffer;
-    int   len_input_buffer;
-};
-
-typedef struct _COM_Message COM_Message;
-
-/* TOS_IFDEF never */
-/*!
 \struct _COM_Message
 \brief A struct that holds the contents of a COM message.
 \details To read or write a byte to the I/O port COM1, a process sends a message to the COM process.  The contents of that message are stored in a COM_Message struct.  
@@ -1305,6 +1287,24 @@ The members of this struct include the following:
 \sa COM_Message, com_port
 */
 /* TOS_ENDIF never */
+struct _COM_Message 
+{
+    char* output_buffer;
+    char* input_buffer;
+    int   len_input_buffer;
+};
+
+/* TOS_IFDEF never */
+/*!
+\typedef COM_Message
+\brief Typedef for the data structure that holds the contents of a COM message.
+\details This typedef allows COM_Message to serve as an alternative name for the struct _COM_Message.  The underlying data structure holds the contents of the message received by the COM process.
+\sa com_port
+*/
+/* TOS_ENDIF never */
+typedef struct _COM_Message COM_Message;
+
+
 void init_com();
 
 
@@ -1329,29 +1329,28 @@ extern PORT keyb_port;
 
 /* TOS_IFDEF never */
 /*!
-\typedef Keyb_Message
-\brief Typedef for the data structure that contains a message to the keyboard process.
-\details This typedef creates the alternative name Keyb_Message for the struct _Keyb_Message.  The underlying data structure holds the contents of a message to the keyboard process, indicating that the requesting process is requesting the next available keystroke to be provided for a specific window. This message is sent by keyb_get_keystroke().
-\sa _Keyb_Message, keyb_get_keystroke(), 
-*/
-/* TOS_ENDIF never */
-
-struct _Keyb_Message {
-    int window_id;
-    BOOL block;
-    char* key_buffer;
-};
-
-typedef struct _Keyb_Message Keyb_Message;
-
-/* TOS_IFDEF never */
-/*!
 \struct _Keyb_Message
 \brief A struct that holds the contents of a message to the keyboard process. 
 \details When a user process requests keystrokes that are directed to a specific window, the user process sends a message to the keyboard process.  The contents of that message are stored in a _Keyb_Message struct, which includes the window identifier, a pointer to a character for the desired keystroke, and a boolean value indicating whether the calling process should be blocked if no keystroke is available.  If so, then the calling process is #STATE_REPLY_BLOCKED while it waits for a reply from the Keyboard Process; if not, then the function keyb_get_keystroke() will return 0 immediately if no keystroke is available, so the calling process does not become blocked.  
 \sa keyb_port, Keyb_Message, keyb_get_keystroke()
 */
 /* TOS_ENDIF never */
+struct _Keyb_Message {
+    int window_id;
+    BOOL block;
+    char* key_buffer;
+};
+
+/* TOS_IFDEF never */
+/*!
+\typedef Keyb_Message
+\brief Typedef for the data structure that contains a message to the keyboard process.
+\details This typedef creates the alternative name Keyb_Message for the struct _Keyb_Message.  The underlying data structure holds the contents of a message to the keyboard process, indicating that the requesting process is requesting the next available keystroke to be provided for a specific window. This message is sent by keyb_get_keystroke().
+\sa keyb_get_keystroke(), 
+*/
+/* TOS_ENDIF never */
+typedef struct _Keyb_Message Keyb_Message;
+
 
 /* TOS_IFDEF never */
 /*!

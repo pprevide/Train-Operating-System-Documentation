@@ -102,9 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aec3ffac6244c790239293a8b055a9a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#aec3ffac6244c790239293a8b055a9a75">sleep</a> (int ticks)</td></tr>
-<tr class="memdesc:aec3ffac6244c790239293a8b055a9a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks.  <a href="#aec3ffac6244c790239293a8b055a9a75">More...</a><br /></td></tr>
-<tr class="separator:aec3ffac6244c790239293a8b055a9a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8c.html#a38016ab7b2931bcb950e0c6f3ba3f342">init_timer</a> ()</td></tr>
 <tr class="memdesc:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the timer process.  <a href="#a38016ab7b2931bcb950e0c6f3ba3f342">More...</a><br /></td></tr>
 <tr class="separator:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,32 +129,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the timer process. </p>
-<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aec3ffac6244c790239293a8b055a9a75"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sleep </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_of_ticks</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks. </p>
-<p>This function is a wrapper that client processes use to create and send a Timer_Message to the timer process, indicating that the client process wishes to sleep for the number of timer ticks indicated by the argument num_of_ticks. This integer is contained in the Timer_Message that is generated and sent to the timer process. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_of_ticks</td><td>Integer specifying the number of timer ticks that the calling process wants to sleep. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a> </dd></dl>
+<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
 
 </div>
 </div>
@@ -173,7 +145,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>PORT owned by the timer process. </p>
-<p>To use the timer service, a client process sends a Timer_Message to this PORT indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this PORT whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
+<p>To use the timer service, a client process sends a Timer_Message to this PORT indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this PORT whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
 
 </div>
 </div>

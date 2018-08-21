@@ -2,7 +2,6 @@ var searchData=
 [
   ['idt',['IDT',['../structIDT.html',1,'']]],
   ['idt_5fentry_5fsize',['IDT_ENTRY_SIZE',['../kernel_8h.html#a77db186991bef443443f3a7414e4d84e',1,'kernel.h']]],
-  ['init_5fcom',['init_com',['../kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5',1,'init_com():&#160;com.c'],['../com_8c.html#a667529bb896d3107cb5d62f608dceaa5',1,'init_com():&#160;com.c']]],
   ['init_5fdispatcher',['init_dispatcher',['../kernel_8h.html#a6b9a52d032bce03b717484ec230ece45',1,'init_dispatcher():&#160;dispatch.c'],['../dispatch_8c.html#a6b9a52d032bce03b717484ec230ece45',1,'init_dispatcher():&#160;dispatch.c']]],
   ['init_5fidt_5fentry',['init_idt_entry',['../kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7',1,'init_idt_entry(int intr_no, void(*isr)(void)):&#160;intr.c'],['../intr_8c.html#add2a7dc4c8b814a7e11ffc87780df7d7',1,'init_idt_entry(int intr_no, void(*isr)(void)):&#160;intr.c']]],
   ['init_5finterrupts',['init_interrupts',['../kernel_8h.html#a88ada49c1954d38252049786595d9a5f',1,'init_interrupts():&#160;intr.c'],['../intr_8c.html#a88ada49c1954d38252049786595d9a5f',1,'init_interrupts():&#160;intr.c']]],
