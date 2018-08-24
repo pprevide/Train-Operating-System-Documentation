@@ -612,6 +612,15 @@ struct _PCB {
 
 /* TOS_IFDEF never */
 /*!
+\typedef PCB
+\brief A typedef that creates PCB as an alternative name for the data type of _PCB struct.
+*/
+/* TOS_ENDIF never */
+typedef struct _PCB PCB;
+
+
+/* TOS_IFDEF never */
+/*!
 \typedef PROCESS
 \brief Typedef for a pointer to a \ref _PCB "PCB" struct.
 \details The \ref pcb array holds a \ref _PCB "PCB" entry for each process.  
@@ -680,16 +689,6 @@ Note that while each process can own multiple ports, a port can only be owned by
 /* TOS_ENDIF never */
 typedef struct _PORT_DEF* PORT;
 
-
-typedef struct _PCB PCB;
-
-/* TOS_IFDEF never */
-/*!
-\typedef PCB
-\brief A typedef that creates PCB as an alternative name for the data type of _PCB struct.
-\sa _PCB
-*/
-/* TOS_ENDIF never */
 
 /* TOS_IFDEF never */
 /*!
@@ -771,7 +770,7 @@ void print_all_processes(WINDOW* wnd);
 /*!
 \brief Initializes the global variables associated with TOS process creation
 \details This function clears all the entries in the \ref pcb array; prepares the doubly-linked list of entries so that each array entry contains the address of the next available PCB slot; prepares the pcb entry for the boot process, and sets the global variable active_proc (used throughout TOS) to the first entry of the \ref pcb array.
-\sa pcb, \ref _PCB "PCB", PROCESS
+\sa pcb, \ref _PCB "PCB", PROCESS, active_proc
 */
 /* TOS_ENDIF never */
 void init_process();
