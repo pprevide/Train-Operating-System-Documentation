@@ -107,19 +107,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWINDOW.html">WINDOW</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds properties of a specific window.  <a href="structWINDOW.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the properties of a specific window.  <a href="structWINDOW.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__PCB.html">PCB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information associated with a TOS process.  <a href="struct__PCB.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDT.html">IDT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data structure that describes an x86 interrupt.  <a href="structIDT.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the data fields associated with an x86 interrupt.  <a href="structIDT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Timer__Message.html">Timer_Message</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct containing the information of the message which is sent by client processes to the timer service.  <a href="struct__Timer__Message.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the information of the message which is sent by a client process to the timer service.  <a href="struct__Timer__Message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__COM__Message.html">COM_Message</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds the contents of a COM message.  <a href="struct__COM__Message.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the contents of a COM message.  <a href="struct__COM__Message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Keyb__Message.html">Keyb_Message</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds the contents of a message to the keyboard process.  <a href="struct__Keyb__Message.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the contents of a message to the keyboard process.  <a href="struct__Keyb__Message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -134,13 +137,13 @@ Macros</h2></td></tr>
 <tr class="memdesc:aa74af0876332d1a6258cff9745a1bd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to processes that are eligible to run and are ready to use CPU cycles.  <a href="#aa74af0876332d1a6258cff9745a1bd53">More...</a><br /></td></tr>
 <tr class="separator:aa74af0876332d1a6258cff9745a1bd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e13ad68fa4d5752084a5ef0e0085a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66">STATE_ZOMBIE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:a8e13ad68fa4d5752084a5ef0e0085a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to processes that are permanently off the ready queue and will never run again.  <a href="#a8e13ad68fa4d5752084a5ef0e0085a66">More...</a><br /></td></tr>
+<tr class="memdesc:a8e13ad68fa4d5752084a5ef0e0085a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to processes that are permanently off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a> and will never run again.  <a href="#a8e13ad68fa4d5752084a5ef0e0085a66">More...</a><br /></td></tr>
 <tr class="separator:a8e13ad68fa4d5752084a5ef0e0085a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a702a7f1c65e77a83166f4642ae6e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7">STATE_SEND_BLOCKED</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ac2a702a7f1c65e77a83166f4642ae6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>.  <a href="#ac2a702a7f1c65e77a83166f4642ae6e7">More...</a><br /></td></tr>
+<tr class="memdesc:ac2a702a7f1c65e77a83166f4642ae6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>.  <a href="#ac2a702a7f1c65e77a83166f4642ae6e7">More...</a><br /></td></tr>
 <tr class="separator:ac2a702a7f1c65e77a83166f4642ae6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600b8498ae32f931e812309e3ea0b715"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715">STATE_REPLY_BLOCKED</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memdesc:a600b8498ae32f931e812309e3ea0b715"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a sending process in the situation where the process has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> and the receiver process has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but not yet called <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>.  <a href="#a600b8498ae32f931e812309e3ea0b715">More...</a><br /></td></tr>
+<tr class="memdesc:a600b8498ae32f931e812309e3ea0b715"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a sending process in the situation where the process has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> and the receiver process has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but not yet called <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>.  <a href="#a600b8498ae32f931e812309e3ea0b715">More...</a><br /></td></tr>
 <tr class="separator:a600b8498ae32f931e812309e3ea0b715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08fbd3b65bb3ea13b91882b70606e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e">STATE_RECEIVE_BLOCKED</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:ac08fbd3b65bb3ea13b91882b70606e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, but there are no messages pending from any other process.  <a href="#ac08fbd3b65bb3ea13b91882b70606e0e">More...</a><br /></td></tr>
@@ -152,13 +155,13 @@ Macros</h2></td></tr>
 <tr class="memdesc:a81b88515a00640cd5475dc031dc4424b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This state is assigned to a process that is waiting for an interrupt to occur.  <a href="#a81b88515a00640cd5475dc031dc4424b">More...</a><br /></td></tr>
 <tr class="separator:a81b88515a00640cd5475dc031dc4424b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558a765eeee1053f8664ea223e85dd95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a558a765eeee1053f8664ea223e85dd95">MAGIC_PCB</a>&#160;&#160;&#160;0x4321dcba</td></tr>
-<tr class="memdesc:a558a765eeee1053f8664ea223e85dd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value used to verify that a data structure is a PCB entry.  <a href="#a558a765eeee1053f8664ea223e85dd95">More...</a><br /></td></tr>
+<tr class="memdesc:a558a765eeee1053f8664ea223e85dd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value used to verify that a data structure being accessed is a <a class="el" href="struct__PCB.html">PCB</a>.  <a href="#a558a765eeee1053f8664ea223e85dd95">More...</a><br /></td></tr>
 <tr class="separator:a558a765eeee1053f8664ea223e85dd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ad70cc6e2125af9340a4bc26a83764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a40ad70cc6e2125af9340a4bc26a83764">MAX_PORTS</a>&#160;&#160;&#160;(<a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014">MAX_PROCS</a> * 2)</td></tr>
-<tr class="memdesc:a40ad70cc6e2125af9340a4bc26a83764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the maximum number of PORTs supported in TOS.  <a href="#a40ad70cc6e2125af9340a4bc26a83764">More...</a><br /></td></tr>
+<tr class="memdesc:a40ad70cc6e2125af9340a4bc26a83764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the maximum number of <a class="el" href="struct__PORT__DEF.html">PORT</a>s supported in TOS.  <a href="#a40ad70cc6e2125af9340a4bc26a83764">More...</a><br /></td></tr>
 <tr class="separator:a40ad70cc6e2125af9340a4bc26a83764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a7162a4cf2bc5e6950e2bf63c1ca47d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5a7162a4cf2bc5e6950e2bf63c1ca47d">MAGIC_PORT</a>&#160;&#160;&#160;0x1234abcd</td></tr>
-<tr class="memdesc:a5a7162a4cf2bc5e6950e2bf63c1ca47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value used to verify that a data structure is a PORT.  <a href="#a5a7162a4cf2bc5e6950e2bf63c1ca47d">More...</a><br /></td></tr>
+<tr class="memdesc:a5a7162a4cf2bc5e6950e2bf63c1ca47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value used to verify that a data structure being accessed is a <a class="el" href="struct__PORT__DEF.html">PORT</a>.  <a href="#a5a7162a4cf2bc5e6950e2bf63c1ca47d">More...</a><br /></td></tr>
 <tr class="separator:a5a7162a4cf2bc5e6950e2bf63c1ca47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532d7d98780162a882090e6c0e1e36fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a532d7d98780162a882090e6c0e1e36fe">DISABLE_INTR</a>(save)</td></tr>
 <tr class="memdesc:a532d7d98780162a882090e6c0e1e36fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembly instructions that disable the interrupt subsystem of TOS to avoid race conditions.  <a href="#a532d7d98780162a882090e6c0e1e36fe">More...</a><br /></td></tr>
@@ -216,6 +219,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a434cb264031f389cbbf1844726748ebc"><td class="memItemLeft" align="right" valign="top">typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc">LONG</a></td></tr>
 <tr class="memdesc:a434cb264031f389cbbf1844726748ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for an unsigned 4-byte data type.  <a href="#a434cb264031f389cbbf1844726748ebc">More...</a><br /></td></tr>
 <tr class="separator:a434cb264031f389cbbf1844726748ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831d87f38811800ce0698bbe85e6b386"><td class="memItemLeft" align="right" valign="top">typedef PCB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a></td></tr>
+<tr class="memdesc:a831d87f38811800ce0698bbe85e6b386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a pointer to a <a class="el" href="struct__PCB.html">PCB</a> struct.  <a href="#a831d87f38811800ce0698bbe85e6b386">More...</a><br /></td></tr>
+<tr class="separator:a831d87f38811800ce0698bbe85e6b386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f26503eb4a201692c1e8d8bb2e168d"><td class="memItemLeft" align="right" valign="top">typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a></td></tr>
 <tr class="memdesc:a83f26503eb4a201692c1e8d8bb2e168d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A typedef that creates the alternative name PARAM for an unsigned integer type.  <a href="#a83f26503eb4a201692c1e8d8bb2e168d">More...</a><br /></td></tr>
 <tr class="separator:a83f26503eb4a201692c1e8d8bb2e168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,11 +288,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a199a1f701f4cc4fd1c3ff7903a102d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a">kprintf</a> (const char *fmt,...)</td></tr>
 <tr class="memdesc:a199a1f701f4cc4fd1c3ff7903a102d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints content to the <a class="el" href="kernel_8h.html#aeb93d089146101ad08f141c0fc2c6b15" title="Pointer to a WINDOW struct for a window that covers the entire screen. ">kernel_window</a> in accordance with the specified format or conversion.  <a href="#a199a1f701f4cc4fd1c3ff7903a102d7a">More...</a><br /></td></tr>
 <tr class="separator:a199a1f701f4cc4fd1c3ff7903a102d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae982573084c63244f2b0c4f8acb043f7"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7">create_process</a> (void(*new_proc)(PROCESS, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>), int prio, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a> param, char *proc_name)</td></tr>
-<tr class="memdesc:ae982573084c63244f2b0c4f8acb043f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered, returns a NULL pointer).  <a href="#ae982573084c63244f2b0c4f8acb043f7">More...</a><br /></td></tr>
+<tr class="memitem:ae982573084c63244f2b0c4f8acb043f7"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7">create_process</a> (void(*new_proc)(<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>), int prio, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a> param, char *proc_name)</td></tr>
+<tr class="memdesc:ae982573084c63244f2b0c4f8acb043f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new TOS process and returns the <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the new process (or, before ports are covered, returns a NULL pointer).  <a href="#ae982573084c63244f2b0c4f8acb043f7">More...</a><br /></td></tr>
 <tr class="separator:ae982573084c63244f2b0c4f8acb043f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba03cb110510187d40043ffd1352d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57">print_process</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd, PROCESS p)</td></tr>
-<tr class="memdesc:a0ba03cb110510187d40043ffd1352d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a copy of the calling process.  <a href="#a0ba03cb110510187d40043ffd1352d57">More...</a><br /></td></tr>
+<tr class="memitem:a0ba03cb110510187d40043ffd1352d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57">print_process</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> p)</td></tr>
+<tr class="memdesc:a0ba03cb110510187d40043ffd1352d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the details of the specified TOS process.  <a href="#a0ba03cb110510187d40043ffd1352d57">More...</a><br /></td></tr>
 <tr class="separator:a0ba03cb110510187d40043ffd1352d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae816c773af94e99847e12d847fe1b252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ae816c773af94e99847e12d847fe1b252">print_all_processes</a> (<a class="el" href="structWINDOW.html">WINDOW</a> *wnd)</td></tr>
 <tr class="memdesc:ae816c773af94e99847e12d847fe1b252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the details of all existing TOS processes.  <a href="#ae816c773af94e99847e12d847fe1b252">More...</a><br /></td></tr>
@@ -294,17 +300,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ab25d44702b6e10e723714c368c4a7520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ab25d44702b6e10e723714c368c4a7520">init_process</a> ()</td></tr>
 <tr class="memdesc:ab25d44702b6e10e723714c368c4a7520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global variables associated with TOS process creation.  <a href="#ab25d44702b6e10e723714c368c4a7520">More...</a><br /></td></tr>
 <tr class="separator:ab25d44702b6e10e723714c368c4a7520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b26baa874c4de9d0db0020a495f307e"><td class="memItemLeft" align="right" valign="top">PROCESS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e">dispatcher</a> ()</td></tr>
+<tr class="memitem:a3b26baa874c4de9d0db0020a495f307e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e">dispatcher</a> ()</td></tr>
 <tr class="memdesc:a3b26baa874c4de9d0db0020a495f307e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects and returns the next process to run.  <a href="#a3b26baa874c4de9d0db0020a495f307e">More...</a><br /></td></tr>
 <tr class="separator:a3b26baa874c4de9d0db0020a495f307e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aeea7e226886cd1f41c19e26e94884e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a4aeea7e226886cd1f41c19e26e94884e">add_ready_queue</a> (PROCESS proc)</td></tr>
+<tr class="memitem:a4aeea7e226886cd1f41c19e26e94884e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a4aeea7e226886cd1f41c19e26e94884e">add_ready_queue</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> proc)</td></tr>
 <tr class="memdesc:a4aeea7e226886cd1f41c19e26e94884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a process to the ready queue.  <a href="#a4aeea7e226886cd1f41c19e26e94884e">More...</a><br /></td></tr>
 <tr class="separator:a4aeea7e226886cd1f41c19e26e94884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9e82f9b4c35add01dad50fdf183e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a1c9e82f9b4c35add01dad50fdf183e9a">remove_ready_queue</a> (PROCESS proc)</td></tr>
+<tr class="memitem:a1c9e82f9b4c35add01dad50fdf183e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a1c9e82f9b4c35add01dad50fdf183e9a">remove_ready_queue</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> proc)</td></tr>
 <tr class="memdesc:a1c9e82f9b4c35add01dad50fdf183e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a process from the ready queue.  <a href="#a1c9e82f9b4c35add01dad50fdf183e9a">More...</a><br /></td></tr>
 <tr class="separator:a1c9e82f9b4c35add01dad50fdf183e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f2384e9e590e0ee81cc9818744b2144"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a8f2384e9e590e0ee81cc9818744b2144">become_zombie</a> ()</td></tr>
-<tr class="memdesc:a8f2384e9e590e0ee81cc9818744b2144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state of the calling process to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a>.  <a href="#a8f2384e9e590e0ee81cc9818744b2144">More...</a><br /></td></tr>
+<tr class="memdesc:a8f2384e9e590e0ee81cc9818744b2144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state of the calling process to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a>.  <a href="#a8f2384e9e590e0ee81cc9818744b2144">More...</a><br /></td></tr>
 <tr class="separator:a8f2384e9e590e0ee81cc9818744b2144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae42c37d7e61697646625aafaeae957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957">resign</a> ()</td></tr>
 <tr class="memdesc:aaae42c37d7e61697646625aafaeae957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a context switch in TOS, giving another process a chance to run.  <a href="#aaae42c37d7e61697646625aafaeae957">More...</a><br /></td></tr>
@@ -318,7 +324,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d">create_port</a> ()</td></tr>
 <tr class="memdesc:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new port for the calling process.  <a href="#ae9d255ea2fe47c5ee2c757bf6416227d">More...</a><br /></td></tr>
 <tr class="separator:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a191b96a6ebaa20de1b58bcd3956bbcd8"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8">create_new_port</a> (PROCESS proc)</td></tr>
+<tr class="memitem:a191b96a6ebaa20de1b58bcd3956bbcd8"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8">create_new_port</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> proc)</td></tr>
 <tr class="memdesc:a191b96a6ebaa20de1b58bcd3956bbcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new port for the process indicated by the parameter proc.  <a href="#a191b96a6ebaa20de1b58bcd3956bbcd8">More...</a><br /></td></tr>
 <tr class="separator:a191b96a6ebaa20de1b58bcd3956bbcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f22fb991371149226f31ddf10f47795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a3f22fb991371149226f31ddf10f47795">open_port</a> (PORT port)</td></tr>
@@ -328,22 +334,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad2213e4e559d438d23552fbd3c2a107a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a port.  <a href="#ad2213e4e559d438d23552fbd3c2a107a">More...</a><br /></td></tr>
 <tr class="separator:ad2213e4e559d438d23552fbd3c2a107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e779a204bd7960376d8f122d5afd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a">send</a> (PORT dest_port, void *data)</td></tr>
-<tr class="memdesc:a70e779a204bd7960376d8f122d5afd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the PORT of a receiver process, which is expected to reply to the message.  <a href="#a70e779a204bd7960376d8f122d5afd5a">More...</a><br /></td></tr>
+<tr class="memdesc:a70e779a204bd7960376d8f122d5afd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, and a reply to the message is expected.  <a href="#a70e779a204bd7960376d8f122d5afd5a">More...</a><br /></td></tr>
 <tr class="separator:a70e779a204bd7960376d8f122d5afd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f">message</a> (PORT dest_port, void *data)</td></tr>
-<tr class="memdesc:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the PORT of a receiver process, from which no reply is expected.  <a href="#aacc4f7df1c840c0e6f109dfde5ff934f">More...</a><br /></td></tr>
+<tr class="memdesc:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, from which no reply is expected.  <a href="#aacc4f7df1c840c0e6f109dfde5ff934f">More...</a><br /></td></tr>
 <tr class="separator:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80">receive</a> (PROCESS *sender)</td></tr>
+<tr class="memitem:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80">receive</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> *sender)</td></tr>
 <tr class="memdesc:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a message.  <a href="#a57fe8a985abbaec28b7065d0ad3b3e80">More...</a><br /></td></tr>
 <tr class="separator:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae559b6ee61d6e596c651dde6028582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582">reply</a> (PROCESS sender)</td></tr>
+<tr class="memitem:afae559b6ee61d6e596c651dde6028582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582">reply</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> sender)</td></tr>
 <tr class="memdesc:afae559b6ee61d6e596c651dde6028582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to a message.  <a href="#afae559b6ee61d6e596c651dde6028582">More...</a><br /></td></tr>
 <tr class="separator:afae559b6ee61d6e596c651dde6028582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab33da3342afdd7d505cae618be9d5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a7ab33da3342afdd7d505cae618be9d5c">init_ipc</a> ()</td></tr>
 <tr class="memdesc:a7ab33da3342afdd7d505cae618be9d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the global variables associated with inter-process communication.  <a href="#a7ab33da3342afdd7d505cae618be9d5c">More...</a><br /></td></tr>
 <tr class="separator:a7ab33da3342afdd7d505cae618be9d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2a7dc4c8b814a7e11ffc87780df7d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7">init_idt_entry</a> (int intr_no, void(*isr)(void))</td></tr>
-<tr class="memdesc:add2a7dc4c8b814a7e11ffc87780df7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entry for a single interrupt.  <a href="#add2a7dc4c8b814a7e11ffc87780df7d7">More...</a><br /></td></tr>
+<tr class="memdesc:add2a7dc4c8b814a7e11ffc87780df7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> entry for a single interrupt.  <a href="#add2a7dc4c8b814a7e11ffc87780df7d7">More...</a><br /></td></tr>
 <tr class="separator:add2a7dc4c8b814a7e11ffc87780df7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c66a2884e17fb661a5a485dcca9e26f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a7c66a2884e17fb661a5a485dcca9e26f">wait_for_interrupt</a> (int intr_no)</td></tr>
 <tr class="memdesc:a7c66a2884e17fb661a5a485dcca9e26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes a process to wait until the specified interrupt occurs.  <a href="#a7c66a2884e17fb661a5a485dcca9e26f">More...</a><br /></td></tr>
@@ -351,6 +357,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a88ada49c1954d38252049786595d9a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f">init_interrupts</a> ()</td></tr>
 <tr class="memdesc:a88ada49c1954d38252049786595d9a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the interrupt subsystem of TOS.  <a href="#a88ada49c1954d38252049786595d9a5f">More...</a><br /></td></tr>
 <tr class="separator:a88ada49c1954d38252049786595d9a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8ece954c7a70eb04493321c6e46f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c">sleep</a> (int num_of_ticks)</td></tr>
+<tr class="memdesc:a2d8ece954c7a70eb04493321c6e46f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks.  <a href="#a2d8ece954c7a70eb04493321c6e46f3c">More...</a><br /></td></tr>
+<tr class="separator:a2d8ece954c7a70eb04493321c6e46f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a38016ab7b2931bcb950e0c6f3ba3f342">init_timer</a> ()</td></tr>
 <tr class="memdesc:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the timer process.  <a href="#a38016ab7b2931bcb950e0c6f3ba3f342">More...</a><br /></td></tr>
 <tr class="separator:a38016ab7b2931bcb950e0c6f3ba3f342"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +369,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5c698260d261a6984816b27db7a3398e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5c698260d261a6984816b27db7a3398e">outportb</a> (unsigned short port, unsigned char value)</td></tr>
 <tr class="memdesc:a5c698260d261a6984816b27db7a3398e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the byte value to the I/O port designated by the argument port.  <a href="#a5c698260d261a6984816b27db7a3398e">More...</a><br /></td></tr>
 <tr class="separator:a5c698260d261a6984816b27db7a3398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667529bb896d3107cb5d62f608dceaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5">init_com</a> ()</td></tr>
+<tr class="memdesc:a667529bb896d3107cb5d62f608dceaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the COM subsystem of TOS.  <a href="#a667529bb896d3107cb5d62f608dceaa5">More...</a><br /></td></tr>
+<tr class="separator:a667529bb896d3107cb5d62f608dceaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5703cd456b7a86eac9a03b4dce660b34"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34">keyb_get_keystroke</a> (int window_id, <a class="el" href="kernel_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> block)</td></tr>
 <tr class="memdesc:a5703cd456b7a86eac9a03b4dce660b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the keyboard process for the next keystroke.  <a href="#a5703cd456b7a86eac9a03b4dce660b34">More...</a><br /></td></tr>
 <tr class="separator:a5703cd456b7a86eac9a03b4dce660b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,12 +415,12 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aeb93d089146101ad08f141c0fc2c6b15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWINDOW.html">WINDOW</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#aeb93d089146101ad08f141c0fc2c6b15">kernel_window</a></td></tr>
-<tr class="memdesc:aeb93d089146101ad08f141c0fc2c6b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct for a window that covers the entire screen.  <a href="#aeb93d089146101ad08f141c0fc2c6b15">More...</a><br /></td></tr>
+<tr class="memdesc:aeb93d089146101ad08f141c0fc2c6b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct for a window that covers the entire screen.  <a href="#aeb93d089146101ad08f141c0fc2c6b15">More...</a><br /></td></tr>
 <tr class="separator:aeb93d089146101ad08f141c0fc2c6b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e64f2ad93cc9de92000f884e6e0a8a9"><td class="memItemLeft" align="right" valign="top">PCB&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9">pcb</a> []</td></tr>
-<tr class="memdesc:a5e64f2ad93cc9de92000f884e6e0a8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of twenty PCB structs.  <a href="#a5e64f2ad93cc9de92000f884e6e0a8a9">More...</a><br /></td></tr>
+<tr class="memdesc:a5e64f2ad93cc9de92000f884e6e0a8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of twenty <a class="el" href="struct__PCB.html">PCB</a> structs.  <a href="#a5e64f2ad93cc9de92000f884e6e0a8a9">More...</a><br /></td></tr>
 <tr class="separator:a5e64f2ad93cc9de92000f884e6e0a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a087ab3f9b5dff3f23f91a1b6e66e5072"><td class="memItemLeft" align="right" valign="top">PROCESS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072">active_proc</a></td></tr>
+<tr class="memitem:a087ab3f9b5dff3f23f91a1b6e66e5072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072">active_proc</a></td></tr>
 <tr class="memdesc:a087ab3f9b5dff3f23f91a1b6e66e5072"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actively-running process.  <a href="#a087ab3f9b5dff3f23f91a1b6e66e5072">More...</a><br /></td></tr>
 <tr class="separator:a087ab3f9b5dff3f23f91a1b6e66e5072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e099987c910c0a74ddb26ffe7b1774"><td class="memItemLeft" align="right" valign="top">PCB *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774">ready_queue</a> []</td></tr>
@@ -418,13 +430,13 @@ Variables</h2></td></tr>
 <tr class="memdesc:a380792ed8611865e8009047a3fee62b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global variable indicating whether interrupts are enabled (TRUE) or disabled (FALSE).  <a href="#a380792ed8611865e8009047a3fee62b5">More...</a><br /></td></tr>
 <tr class="separator:a380792ed8611865e8009047a3fee62b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7271a38be80889290a3b624f3d6bad83"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83">timer_port</a></td></tr>
-<tr class="memdesc:a7271a38be80889290a3b624f3d6bad83"><td class="mdescLeft">&#160;</td><td class="mdescRight">PORT owned by the timer process.  <a href="#a7271a38be80889290a3b624f3d6bad83">More...</a><br /></td></tr>
+<tr class="memdesc:a7271a38be80889290a3b624f3d6bad83"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the timer process.  <a href="#a7271a38be80889290a3b624f3d6bad83">More...</a><br /></td></tr>
 <tr class="separator:a7271a38be80889290a3b624f3d6bad83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3235fc563e60489c99c3a3959ead5f24"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24">com_port</a></td></tr>
-<tr class="memdesc:a3235fc563e60489c99c3a3959ead5f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of the PORTs owned by the COM process to receive messages from user processes.  <a href="#a3235fc563e60489c99c3a3959ead5f24">More...</a><br /></td></tr>
+<tr class="memdesc:a3235fc563e60489c99c3a3959ead5f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the COM process to receive messages from user processes.  <a href="#a3235fc563e60489c99c3a3959ead5f24">More...</a><br /></td></tr>
 <tr class="separator:a3235fc563e60489c99c3a3959ead5f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc32d8217e2da0da36dc851cbc97cdac"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac">keyb_port</a></td></tr>
-<tr class="memdesc:afc32d8217e2da0da36dc851cbc97cdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PORT owned by the keyboard process.  <a href="#afc32d8217e2da0da36dc851cbc97cdac">More...</a><br /></td></tr>
+<tr class="memdesc:afc32d8217e2da0da36dc851cbc97cdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the keyboard process.  <a href="#afc32d8217e2da0da36dc851cbc97cdac">More...</a><br /></td></tr>
 <tr class="separator:afc32d8217e2da0da36dc851cbc97cdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -457,7 +469,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The base address of the I/O ports associated with COM1. </p>
-<p>It is important to note that these I/O ports are not to be confused with the PORTs used by TOS processes for inter-process communication. </p>
+<p>It is important to note that these I/O ports are not to be confused with a <a class="el" href="struct__PORT__DEF.html">PORT</a> used by TOS processes for inter-process communication. </p>
 
 </div>
 </div>
@@ -487,7 +499,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The base address of the I/O ports associated with COM2. </p>
-<p>It is important to note that these I/O ports are not to be confused with the PORTs used by TOS processes for inter-process communication. </p>
+<p>It is important to note that these I/O ports are not to be confused with the <a class="el" href="struct__PORT__DEF.html">PORT</a> used by TOS processes for inter-process communication. </p>
 
 </div>
 </div>
@@ -506,7 +518,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">asm</span> (<span class="stringliteral">&quot;pushfl&quot;</span>);                   \</div><div class="line">                                asm (<span class="stringliteral">&quot;popl %0&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (save) : ); \</div><div class="line">                asm (<span class="stringliteral">&quot;cli&quot;</span>);</div></div><!-- fragment -->
 <p>Assembly instructions that disable the interrupt subsystem of TOS to avoid race conditions. </p>
-<p>When interrupts are enabled in TOS, a context switch can occur between any two machine instructions in response to an interrupt being raised. This condition is a problem, because many TOS functions contain critical sections that can lead to race conditions if a context switch happens at an unfortunate time. This problem is addressed by disabling interrupts while in these functions. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a529e0c1767f0b71a5269eeb7b09528cf" title="Assembly instructions that enable the interrupt subsystem of TOS. ">ENABLE_INTR</a> </dd></dl>
+<p>When interrupts are enabled in TOS, a context switch can occur between any two machine instructions in response to an interrupt being raised. This condition is a problem, because many TOS functions contain critical sections that can lead to race conditions if a context switch happens at an unfortunate time. This problem is addressed by disabling interrupts while in the critical sections of these functions. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a529e0c1767f0b71a5269eeb7b09528cf" title="Assembly instructions that enable the interrupt subsystem of TOS. ">ENABLE_INTR</a> </dd></dl>
 
 </div>
 </div>
@@ -540,7 +552,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The number of bytes of an entry in the Interrupt Descriptor Table ("IDT"). </p>
-<p>The <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> is a 256-element array, where each element is the descriptor for one interrupt supported by the x86. Each descriptor is an 8-byte data structure with information about (1) the selector and (2) offset for the ISR that handles the interrupt, and (3) attributes of that interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a9affc80dd8947cc1dcb1ae52801923c8" title="The number of elements in the Interrupt Descriptor Table (&quot;IDT&quot;). ">MAX_INTERRUPTS</a> </dd></dl>
+<p>The <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> is a 256-element array, where each element is the descriptor for one interrupt supported by the x86. Each descriptor is an 8-byte data structure with information about (1) the selector and (2) offset for the ISR that handles the interrupt, and (3) attributes of that interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a9affc80dd8947cc1dcb1ae52801923c8" title="The number of elements in the Interrupt Descriptor Table (&quot;IDT&quot;). ">MAX_INTERRUPTS</a> </dd></dl>
 
 </div>
 </div>
@@ -569,8 +581,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A value used to verify that a data structure is a PCB entry. </p>
-<p>"MAGIC" codes are used in TOS as a debugging and security feature in assert() statements. PCB entries store this value in a field. When a process attempts to access a PCB entry, this field is used to verify that the data structure being accessed is in fact a PCB entry. Failure of this condition stops execution of TOS. </p>
+<p>A value used to verify that a data structure being accessed is a <a class="el" href="struct__PCB.html">PCB</a>. </p>
+<p>"MAGIC" codes are used in TOS as a debugging and security feature in assert() statements. <a class="el" href="struct__PCB.html">PCB</a> structures store this value in a field. When a process attempts to access a PCB, this field is used to verify that the data structure being accessed is in fact a PCB. Failure of this condition stops execution of TOS. </p>
 
 </div>
 </div>
@@ -584,8 +596,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A value used to verify that a data structure is a PORT. </p>
-<p>"MAGIC" codes are used in TOS as a debugging and security feature in assert() statements. Each PORT data structure entries store this value in its "magic" field. When a process attempts to access a PORT, this field is used to verify that the data structure being accessed is in fact a PORT. Failure of this condition stops execution of TOS. </p>
+<p>A value used to verify that a data structure being accessed is a <a class="el" href="struct__PORT__DEF.html">PORT</a>. </p>
+<p>"MAGIC" codes are used in TOS as a debugging and security feature in assert() statements. Each <a class="el" href="struct__PORT__DEF.html">PORT</a> stores this value in its "magic" field. When a process attempts to access a <a class="el" href="struct__PORT__DEF.html">PORT</a>, this field is used to verify that the data structure being accessed is in fact a <a class="el" href="struct__PORT__DEF.html">PORT</a>. Failure of this condition stops execution of TOS. </p>
 
 </div>
 </div>
@@ -600,7 +612,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The number of elements in the Interrupt Descriptor Table ("IDT"). </p>
-<p>The <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> is an array of 256 elements, where each element is a descriptor for one x86-supported interrupt. When the interrupt subsystem of TOS is initialized, this array is created and each of its elements is initialized with an entry describing the associated interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a77db186991bef443443f3a7414e4d84e" title="The number of bytes of an entry in the Interrupt Descriptor Table (&quot;IDT&quot;). ">IDT_ENTRY_SIZE</a> </dd></dl>
+<p>The <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> is an array of 256 elements, where each element is a descriptor for one x86-supported interrupt. When the interrupt subsystem of TOS is initialized, this array is created and each of its elements is initialized with an entry describing the associated interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a77db186991bef443443f3a7414e4d84e" title="The number of bytes of an entry in the Interrupt Descriptor Table (&quot;IDT&quot;). ">IDT_ENTRY_SIZE</a> </dd></dl>
 
 </div>
 </div>
@@ -614,8 +626,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Specifies the maximum number of PORTs supported in TOS. </p>
-<p>In the inter-process communication of TOS, messages are delivered to PORTs. Each TOS process can have one or more PORTs, but each PORT can be owned by exactly one process. This number is the size of the array that holds the PORT entries. </p>
+<p>Specifies the maximum number of <a class="el" href="struct__PORT__DEF.html">PORT</a>s supported in TOS. </p>
+<p>In the inter-process communication of TOS, messages are delivered to ports. Each TOS process can have one or more ports, but each port can be owned by exactly one process. This number is the size of the array that holds the <a class="el" href="struct__PORT__DEF.html">PORT</a> entries. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a> </dd></dl>
 
 </div>
 </div>
@@ -630,7 +642,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies the maximum number of TOS processes that can be created. </p>
-<p>Processes in TOS can be created, but are never deleted. There is a PCB entry for every TOS process. These entries are never deleted; once a process's PCB entry is created, it is never removed. After a TOS process has accomplished its task, the state of the TOS process can be changed to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a> to indicate that it will not run again. </p>
+<p>Processes in TOS can be created, but are never deleted. There is a <a class="el" href="struct__PCB.html">PCB</a> entry for every TOS process. These entries are never deleted; once a process's <a class="el" href="struct__PCB.html">PCB</a> entry is created, it is never removed. After a TOS process has accomplished its task, the state of the TOS process can be changed to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a> to indicate that it will not run again. </p>
 
 </div>
 </div>
@@ -660,7 +672,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This state is assigned to a process that is waiting for an interrupt to occur. </p>
-<p>TOS utilizes keyboard interrupts, timer interrupts, and COM1 interrupts to accomplish various functions. A TOS process that is waiting for any of these interrupts is placed into this state and remains off the ready queue. When the interrupt occurs, the process is changed to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and put back on the ready queue so that it can resume activity. </p>
+<p>TOS utilizes keyboard interrupts, timer interrupts, and COM1 interrupts to accomplish various functions. A TOS process that is waiting for any of these interrupts is placed into this state and remains off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. When the interrupt occurs, the process is changed to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and put back on the ready queue so that it can resume activity. </p>
 
 </div>
 </div>
@@ -675,7 +687,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This state is assigned to a process that has called <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, and the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. </p>
-<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, it means that the receiver is not ready to receive the message, and the sender process must wait until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. Until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender process waits in this blocked state. Unlike <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a>, a process in this state does not expect a reply from the receiver, so that when the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, a <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> process can be changed to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and be put back on the ready queue. </p>
+<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, it means that the receiver is not ready to receive the message, and the sender process must wait until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. Until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender process waits in this blocked state and is off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. Unlike <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a>, a process in this state does not expect a reply from the receiver, so that when the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, a <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> process can be changed to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and be put back on the ready queue. </p>
 
 </div>
 </div>
@@ -690,7 +702,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This state is assigned to processes that are eligible to run and are ready to use CPU cycles. </p>
-<p>Only processes with this state can be on the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. If a process is in any other state, it is not eligible for CPU cycles and must be off the ready queue. </p>
+<p>Only processes with this state can be on the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. If a process is in any other state, it is not eligible for CPU cycles and must be off the ready_queue. </p>
 
 </div>
 </div>
@@ -705,7 +717,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, but there are no messages pending from any other process. </p>
-<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but no other process has sent it a message (either via <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>), then the process that called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> enters this blocked state in order to await the sending of a message by another process. Once another process sends a message via either <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> to this process while this process is receive-blocked, then this process goes from receive-blocked to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>. </p>
+<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but no other process has sent it a message (either via <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>), then the process that called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> enters this blocked state in order to await the sending of a message by another process. While receive-blocked, the process is off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. Once another process sends a message via either <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> to this process while this process is receive-blocked, then this process goes from receive-blocked to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>. </p>
 
 </div>
 </div>
@@ -719,8 +731,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This state is assigned to a sending process in the situation where the process has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> and the receiver process has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but not yet called <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>. </p>
-<p>When the sender uses <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> instead of <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, it is because the sender needs a reply from the receiver before the sender can be put back on the ready queue. This state is used to indicate that the sender is awaiting a reply from the receiver process. After the receiver executes <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process goes from this state to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and is put back on the ready queue. </p>
+<p>This state is assigned to a sending process in the situation where the process has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> and the receiver process has called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> but not yet called <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>. </p>
+<p>When the sender uses <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> instead of <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, it is because the sender needs a reply from the receiver before the sender can be put back on the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. This state is used to indicate that the sender is awaiting a reply from the receiver process. After the receiver executes <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process goes from this state to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and is put back on the ready queue. </p>
 
 </div>
 </div>
@@ -734,8 +746,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. </p>
-<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, it means that the receiver is not ready to receive the message, and the sender process must wait until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. Until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender process waits in this blocked state and is off the ready queue. Unlike <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a>, a process in this state will not go back to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> when the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>; rather, a process in this state becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and subsequently awaits a reply from the receiver. </p>
+<p>This state is assigned to a process that has called <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. </p>
+<p>In inter-process communication, if a TOS process calls <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> but the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, it means that the receiver is not ready to receive the message, and the sender process must wait until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>. Until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender process waits in this blocked state and is off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>. Unlike <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a>, a process in this state will not go back to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> when the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>; rather, a process in this state becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and subsequently awaits a reply from the receiver. </p>
 
 </div>
 </div>
@@ -749,7 +761,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This state is assigned to processes that are permanently off the ready queue and will never run again. </p>
+<p>This state is assigned to processes that are permanently off the <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a> and will never run again. </p>
 <p>Once a process has completed its task and has no need to ever run again, it should be removed permanently off the ready queue. Such processes are assigned this state, which is irreversible. </p>
 
 </div>
@@ -841,7 +853,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A typedef that creates the alternative name PARAM for an unsigned integer type. </p>
-<p>PARAM can be used to pass an optional parameter to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> so that the process that calls <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> can communicate the parameter to the new process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> </dd></dl>
+<p>PARAM can be used to pass an optional parameter to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> so that the process that calls <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> can communicate the parameter to the new process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a831d87f38811800ce0698bbe85e6b386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for a pointer to a <a class="el" href="struct__PCB.html">PCB</a> struct. </p>
+<p>The <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array holds a <a class="el" href="struct__PCB.html">PCB</a> entry for each process. This typedef allows PROCESS to be used as an alternative name for a pointer to a <a class="el" href="struct__PCB.html">PCB</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PCB.html">PCB</a> </dd></dl>
 
 </div>
 </div>
@@ -883,7 +910,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void add_ready_queue </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>proc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -914,8 +941,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the state of the calling process to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a>. </p>
-<p>Upon calling this function, the calling process becomes a "zombie", a permanent and irrevocable state in which the process is never again eligible for CPU cycles. This function also removes the calling process from the ready_queue and initiates a context switch by calling <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> immediately afterward. Once a process calls <a class="el" href="kernel_8h.html#a8f2384e9e590e0ee81cc9818744b2144" title="Changes the state of the calling process to STATE_ZOMBIE. ">become_zombie()</a>, it will never again be any other state other than <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a> and will never run again. The "zombie" state is useful for identifying those processes that will never be active or run again (as opposed to processes that are in a blocked state, which can be restored to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> at some future time). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a1c9e82f9b4c35add01dad50fdf183e9a" title="Removes a process from the ready queue. ">remove_ready_queue()</a>, <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> </dd></dl>
+<p>Changes the state of the calling process to <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a>. </p>
+<p>Upon calling this function, the calling process becomes a "zombie", a permanent and irrevocable state in which the process is never again eligible for CPU cycles. This function also removes the calling process from the ready_queue and initiates a context switch by calling <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> immediately afterward. Once a process calls <a class="el" href="kernel_8h.html#a8f2384e9e590e0ee81cc9818744b2144" title="Changes the state of the calling process to STATE_ZOMBIE. ">become_zombie()</a>, it will never again be any other state other than <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a> and will never run again. The "zombie" state is useful for identifying those processes that will never be active or run again (as opposed to processes that are in a blocked state, which can be restored to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> at some future time). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>, <a class="el" href="kernel_8h.html#a1c9e82f9b4c35add01dad50fdf183e9a" title="Removes a process from the ready queue. ">remove_ready_queue()</a>, <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> </dd></dl>
 
 </div>
 </div>
@@ -936,11 +963,11 @@ Variables</h2></td></tr>
 <p>Clears the contents of the window. </p>
 <p>The window content is erased and the cursor is placed at the top left corner of the empty window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -959,7 +986,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Closes a port. </p>
-<p>Closes the PORT indicated by the parameter port. Messages can still be sent to a closed port, but they will not be delivered to the receiver. Instead, they are queued for delivery at some later time, after the port has been re-opened. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3f22fb991371149226f31ddf10f47795" title="Opens a port. ">open_port()</a> </dd></dl>
+<p>Closes the <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter port. Messages can still be sent to a closed port, but they will not be delivered to the receiver. Instead, they are queued for delivery at some later time, after the port has been re-opened. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3f22fb991371149226f31ddf10f47795" title="Opens a port. ">open_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -970,7 +997,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">PORT create_new_port </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>proc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -978,7 +1005,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a new port for the process indicated by the parameter proc. </p>
-<p>This function creates and returns a new port for the PROCESS indicated by proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd>PORT, PROCESS, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d" title="Creates a new port for the calling process. ">create_port()</a> </dd></dl>
+<p>This function creates and returns a new port for the <a class="el" href="struct__PCB.html">PROCESS</a> indicated by proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d" title="Creates a new port for the calling process. ">create_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -996,7 +1023,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a new port for the calling process. </p>
-<p>This function creates and returns a new port for the running process active_proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd>PORT, PROCESS, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8" title="Creates a new port for the process indicated by the parameter proc. ">create_new_port()</a> </dd></dl>
+<p>This function creates and returns a new port for the running process active_proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8" title="Creates a new port for the process indicated by the parameter proc. ">create_new_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -1007,7 +1034,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">PORT create_process </td>
           <td>(</td>
-          <td class="paramtype">void(*)(PROCESS, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d">PARAM</a>)&#160;</td>
           <td class="paramname"><em>new_proc</em>, </td>
         </tr>
         <tr>
@@ -1036,8 +1063,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered, returns a NULL pointer). </p>
-<p>When the running process calls this function, a new TOS process is created through the following steps: (1) The next available PCB entry in the pcb[] array is allocated; (2) the elements of this PCB entry are initialized (see the lecture slide on create_process for a full description); (3) an available 16kb stack frame for this process is allocated; (4) the newly-allocated stack frame is initialized (see the lecture slide describing how this function populates the stack); (5) the stack pointer is saved to the PCB.esp field for this PCB entry; (6) the new process is added to the ready queue (but note that <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> is not called, and that the new process does not start running immediately); (7) return either a null pointer (before the class covers ports) or the PORT of the new process. Note that the implementation of <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> will change slightly once interrupts are introduced, later in the course. See the "Preemptive Multitasking" slide deck for more information at the appropriate time in the course. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates a new TOS process and returns the <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the new process (or, before ports are covered, returns a NULL pointer). </p>
+<p>When the running process calls this function, a new TOS process is created through the following steps:<br />
+(1) The next available PCB entry in the global pcb array is allocated;<br />
+ (2) the elements of this PCB entry are initialized (see the lecture slide on create_process for a full description);<br />
+ (3) an available 16kb stack frame for this process is allocated;<br />
+ (4) the newly-allocated stack frame is initialized (see the lecture slide describing how this function populates the stack);<br />
+(5) the stack pointer is saved to the PCB.esp field for this PCB entry;<br />
+(6) the new process is added to the ready queue (but note that <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> is not called, and that the new process does not start running immediately);<br />
+(7) return either a null pointer (before the class covers ports) or the <a class="el" href="struct__PORT__DEF.html">PORT</a> of the new process.<br />
+<br />
+Note that the implementation of <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> will change slightly once interrupts are introduced, later in the course. See the "Preemptive Multitasking" slide deck for more information at the appropriate time in the course. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">new_proc</td><td>Function pointer to a C function that takes a PROCESS and a PARAM as input arguments and returns void. This function pointer new_proc serves as the entry point for the newly-created TOS process </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">prio</td><td>Integer specifying the priority of this new process </td></tr>
@@ -1046,8 +1082,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>PORT The port owned by the newly-created process. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d" title="A typedef that creates the alternative name PARAM for an unsigned integer type. ">PARAM</a>, PROCESS, PCB, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PORT__DEF.html" title="A data structure that holds the members associated with a TOS process&#39;s port, used for inter-process ...">_PORT_DEF</a>, PORT_DEF </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a> The port owned by the newly-created process. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#a83f26503eb4a201692c1e8d8bb2e168d" title="A typedef that creates the alternative name PARAM for an unsigned integer type. ">PARAM</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Typedef for a pointer to a PCB struct. ">PROCESS</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a> </dd></dl>
 
 </div>
 </div>
@@ -1056,7 +1092,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PROCESS dispatcher </td>
+          <td class="memname"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> dispatcher </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1065,7 +1101,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Selects and returns the next process to run. </p>
-<p>Only processes that are on the ready queue are eligible to be selected. TOS uses priority-based round robin scheduling: higher-priority processes are chosen to run before lower-priority processes. Within the same priority level, a round-robin scheduling approach is used: the next process on the ready queue at that priority level is chosen (or, if the process is alone at its priority level, it will be chosen by the dispatcher). It is assumed that there is always at least one process on the ready queue: to guarantee that this assumption holds, a null process of priority 0 is always on the ready queue and never becomes blocked under any circumstances. See the lecture slide called "Scheduling" for more information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>, <a class="el" href="kernel_8h.html#a11dd35e7b561c664f6b9deca1c30444a" title="Creates the null process. ">init_null_process()</a> </dd></dl>
+<p>Only processes that are on the ready queue are eligible to be selected. TOS uses priority-based round robin scheduling: higher-priority processes are chosen to run before lower-priority processes. Within the same priority level, a round-robin scheduling approach is used: the next process on the ready queue at that priority level is chosen (or, if the process is the only one at its priority level, it will be chosen). It is assumed that there is always at least one process on the ready queue: to guarantee that this assumption holds, a null process of priority 0 is always on the ready queue and never becomes blocked under any circumstances. See the lecture slide called "Scheduling" for more information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>, <a class="el" href="kernel_8h.html#a11dd35e7b561c664f6b9deca1c30444a" title="Creates the null process. ">init_null_process()</a> </dd></dl>
 
 </div>
 </div>
@@ -1094,6 +1130,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a667529bb896d3107cb5d62f608dceaa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_com </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the COM subsystem of TOS. </p>
+<p>This function initializes the UART ("Universal Asynchronous Receiver/Transmitter") that implements the RS232 protocol for serial line communication used by TOS. This function also creates the COM process by calling <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a>. The global variable <a class="el" href="com_8c.html#a3235fc563e60489c99c3a3959ead5f24">com_port</a> is set to point to the <a class="el" href="struct__PORT__DEF.html">PORT</a> (not to be confused with an I/O port) that is owned by the COM process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__COM__Message.html">COM_Message</a>, <a class="el" href="kernel_8h.html#a3235fc563e60489c99c3a3959ead5f24" title="A PORT owned by the COM process to receive messages from user processes. ">com_port</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6b9a52d032bce03b717484ec230ece45"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1108,7 +1162,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the global variables associated with the ready queue. </p>
-<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to prepare the ready queue and associated global variables. In one possible implementation, each entry of the ready queue is initialized with a null pointer; and the global variable ready_procs in <a class="el" href="dispatch_8c.html" title="Task scheduling. ">dispatch.c</a> is set to zero; and the calling process (the boot process) is added to the ready queue. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>, PCB, <a class="el" href="kernel_8h.html#a4aeea7e226886cd1f41c19e26e94884e" title="Adds a process to the ready queue. ">add_ready_queue()</a> </dd></dl>
+<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to prepare the ready queue and associated global variables. In one possible implementation, each entry of the ready queue is initialized with a null pointer; and the global variable ready_procs in <a class="el" href="dispatch_8c.html" title="Task scheduling. ">dispatch.c</a> is set to zero; and the calling process (the boot process) is added to the ready queue. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a4aeea7e226886cd1f41c19e26e94884e" title="Adds a process to the ready queue. ">add_ready_queue()</a> </dd></dl>
 
 </div>
 </div>
@@ -1136,15 +1190,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entry for a single interrupt. </p>
-<p>This function initializes the entry in the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> for the interrupt specified by the integer intr_no. The offset of the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entry is populated with the value of the function pointer to the ISR. See the "Interrupts" lecture slides for more information about the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> data structures. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Initializes the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> entry for a single interrupt. </p>
+<p>This function initializes the entry in the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> for the interrupt specified by the integer intr_no. The offset of the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> entry is populated with the value of the function pointer to the ISR. See the "Interrupts" lecture slides for more information about the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> data structures. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">intr_no</td><td>Integer number of the interrupt that this <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entry describes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_no</td><td>Integer number of the interrupt that this <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> entry describes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">isr</td><td>Function pointer to a C function that takes no arguments and returns void; this function pointer is the entry point for the interrupt service routine for the interrupt numbered intr_no. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a>, <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a>, <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> </dd></dl>
 
 </div>
 </div>
@@ -1162,7 +1216,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the interrupt subsystem of TOS. </p>
-<p>This function initializes each of the 256 entries in the interrupt descriptor table (by calling <a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a> 256 times, once for each interrupt). See the "Interrupts" lecture slides for more information on the <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entries and the different types of interrupts. This function also sets the global variable interrupts_initialized to true, and enables interrupts by executing the assembly instruction "sti". Note: in TOS, the three types of interrupts that can be handled are the keyboard interrupt, timer interrupt, and COM1 interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a>, <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> </dd></dl>
+<p>This function initializes each of the 256 entries in the interrupt descriptor table (by calling <a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a> 256 times, once for each interrupt). See the "Interrupts" lecture slides for more information on the <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> entries and the different types of interrupts. This function also sets the global variable interrupts_initialized to true, and enables interrupts by executing the assembly instruction "sti". Note: in TOS, the three types of interrupts that can be handled are the keyboard interrupt, timer interrupt, and COM1 interrupt. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a>, <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> </dd></dl>
 
 </div>
 </div>
@@ -1180,7 +1234,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the global variables associated with inter-process communication. </p>
-<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to initialize the entries of the array of PORTs held by the global variable port[]. Among other things, each element of the array contains a pointer to the next element of the array and a field indicating whether the array entry is being used by a process. See the "IPC" slide deck for more information about these global variables. </p><dl class="section see"><dt>See also</dt><dd>PORT, PORT_DEF </dd></dl>
+<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to initialize the entries of an array of pointers to <a class="el" href="struct__PORT__DEF.html">PORT</a> data structures, and to assign the array to a global variable. Among other things, each element of the array contains a pointer to the next element of the array and a field indicating whether the array entry is being used by a process. See the "IPC" slide deck for more information about the setup of inter-process communication. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a> </dd></dl>
 
 </div>
 </div>
@@ -1198,7 +1252,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the keyboard process. </p>
-<p>This process creates the keyboard process and assigns the PORT returned by the call to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> to the global variable keyb_port. Note: this process must be called after the initialization of the Window Manager via <a class="el" href="kernel_8h.html#adee9719f3126c238ba343ac0d6b40d6a" title="Initializes the Window Manager service. ">init_wm()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a>, <a class="el" href="kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a> </dd></dl>
+<p>This process creates the keyboard process and assigns the <a class="el" href="struct__PORT__DEF.html">PORT</a> returned by the call to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> to the global variable keyb_port. Note: this process must be called after the initialization of the Window Manager via <a class="el" href="kernel_8h.html#adee9719f3126c238ba343ac0d6b40d6a" title="Initializes the Window Manager service. ">init_wm()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a>, <a class="el" href="kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a> </dd></dl>
 
 </div>
 </div>
@@ -1216,7 +1270,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates the null process. </p>
-<p>As TOS starts to run, this function is called in order to create a "null process" at priority level 0 which will always be on the ready queue. No other process will ever have priority level 0, so that <a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e" title="Selects and returns the next process to run. ">dispatcher()</a> will never choose the null process unless it is the only process on the ready queue (i.e., all other processes are <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a> or in one of the blocked states). The null process exists to guarantee that there is always at least one process on the ready queue. The null process should never become any state other than <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>. The C function that defines the null process is simply an infinite while loop, so that like all other TOS processes, the null process never returns to its caller in the traditional sense. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>, <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a> </dd></dl>
+<p>As TOS starts to run, this function is called in order to create a "null process" at priority level 0 which will always be on the ready queue. No other process will ever have priority level 0, so that <a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e" title="Selects and returns the next process to run. ">dispatcher()</a> will never choose the null process unless it is the only process on the ready queue (i.e., all other processes are <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a> or in one of the blocked states). The null process exists to guarantee that there is always at least one process on the ready queue. The null process should never become any state other than <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>. The C function that defines the null process is simply an infinite while loop, so that like all other TOS processes, the null process never returns to its caller in the traditional sense. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a>, <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a> </dd></dl>
 
 </div>
 </div>
@@ -1234,7 +1288,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the global variables associated with TOS process creation. </p>
-<p>This function clears all the entries in the pcb[] array; prepares the doubly-linked list of entries so that each pcb entry contains the address of the next available PCB slot; prepares the pcb entry for the boot process, and sets the global variable active_proc (used throughout TOS) to the first entry of the pcb array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, PCB, PROCESS </dd></dl>
+<p>This function clears all the entries in the <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array; prepares the doubly-linked list of entries so that each array entry contains the address of the next available PCB slot; prepares the pcb entry for the boot process, and sets the global variable active_proc (used throughout TOS) to the first entry of the <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Typedef for a pointer to a PCB struct. ">PROCESS</a> </dd></dl>
 
 </div>
 </div>
@@ -1252,7 +1306,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the timer process. </p>
-<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
+<p>This function creates the timer process and the port, called <a class="el" href="kernel_8h.html#a7271a38be80889290a3b624f3d6bad83" title="The PORT owned by the timer process. ">timer_port</a>, which is owned by the timer process. This function also calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to initiate a context switch. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__Timer__Message.html">Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
 
 </div>
 </div>
@@ -1307,7 +1361,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads a byte from the I/O port designated by the argument port. </p>
-<p>The port should not be confused with the ports used for inter-process communication. COM1 can be accessed via I/O ports 0x3F8 through 0x3FF, with the base address 0x3F8 defined as COM1_PORT. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The port should not be confused with the ports used for inter-process communication. COM1 can be accessed via I/O ports 0x3F8 through 0x3FF, with the base address 0x3F8 defined as <a class="el" href="kernel_8h.html#a8982f081d8608e775b0739cde65373d5" title="The base address of the I/O ports associated with COM1. ">COM1_PORT</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The I/O port from which the byte is to be read. </td></tr>
   </table>
@@ -1559,7 +1613,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dynamically allocates a continuous region of memory. </p>
-<p>TOS supports high memory in the region from 1 MB to 8 MB, which is managed by <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a>. A caller of <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a> is allocated a continuous region of high memory. Malloc() keeps track of fragmentation in high memory using its own data structure and finds a sufficiently-sized region of memory for the caller. The allocated memory is not initialized (e.g., zeroed out) in any way. If no sufficiently-sized region of memory is available, <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a> stops TOS with a failed assertion. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>TOS supports high memory in the region from 1 MB to 8 MB, which is managed by <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a>. A caller of <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a> is allocated a continuous region of high memory. Malloc keeps track of fragmentation in high memory using its own data structure and finds a sufficiently-sized region of memory for the caller. The allocated memory is not initialized (e.g., zeroed out) in any way. If no sufficiently-sized region of memory is available, <a class="el" href="kernel_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Dynamically allocates a continuous region of memory. ">malloc()</a> stops TOS with a failed assertion. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of the requested memory region. </td></tr>
   </table>
@@ -1594,15 +1648,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a message to the PORT of a receiver process, from which no reply is expected. </p>
-<p>This function sends a synchronous message to the destination PORT indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, after which time the sender is put back on the ready queue. If the sender becomes blocked, it is placed on the send-blocked list of the receiver, then goes off the ready queue and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message can be delivered immediately and the sender does not become blocked. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, from which no reply is expected. </p>
+<p>This function sends a synchronous message to the destination <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, after which time the sender is put back on the ready queue. If the sender becomes blocked, it is placed on the send-blocked list of the receiver, then goes off the ready queue and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message can be delivered immediately and the sender does not become blocked. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A PORT owned by the receiver process, which must be open if the message is to be deliverable. See the slides on inter-process communication for more details. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the receiver process, which must be open if the message is to be deliverable. See the slides on inter-process communication for more details. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A void pointer to the data contained in the message. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
 
 </div>
 </div>
@@ -1639,13 +1693,13 @@ Variables</h2></td></tr>
 <p>Places the cursor at a specific position. </p>
 <p>The position of the cursor is set to be (x,y) relative to the upper left corner of the window. The position must be within the boundaries of the window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Integer x-coordinate within the window where the cursor will be placed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>Integer y-coordinate within the window where the cursor will be placed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab406d8dcb6b139a7d87d4feae5e66895" title="Removes the cursor from a window. ">remove_cursor()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab406d8dcb6b139a7d87d4feae5e66895" title="Removes the cursor from a window. ">remove_cursor()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -1664,7 +1718,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opens a port. </p>
-<p>Opens the PORT indicated by the parameter port. Only messages that are in an open port can be delivered to the receiver. (Messages can still be sent to a closed port, but they will not be delivered to the receiver; instead, the messages are queued for later delivery.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ad2213e4e559d438d23552fbd3c2a107a" title="Closes a port. ">close_port()</a> </dd></dl>
+<p>Opens the <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter port. Only messages that are in an open port can be delivered to the receiver. (Messages can still be sent to a closed port, but they will not be delivered to the receiver; instead, the messages are queued for later delivery.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ad2213e4e559d438d23552fbd3c2a107a" title="Closes a port. ">close_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -1731,12 +1785,12 @@ Variables</h2></td></tr>
 <p>Displays a character at the cursor location, and advances the cursor appropriately. </p>
 <p>The indicated character is displayed at the cursor location, and the cursor is advanced to the next location appropriately in the same manner as within a shell. If necessary, the content of the window scrolls upward accordingly, also in the same manner as a shell. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>The character to be displayed at the current cursor location. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae430920aa5940d9c9e34a5ec6e5c1ed8" title="Displays a string starting at the cursor location, and advances the cursor appropriately after the en...">output_string()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae430920aa5940d9c9e34a5ec6e5c1ed8" title="Displays a string starting at the cursor location, and advances the cursor appropriately after the en...">output_string()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -1767,12 +1821,12 @@ Variables</h2></td></tr>
 <p>Displays a string starting at the cursor location, and advances the cursor appropriately after the end of the string. </p>
 <p>The string (i.e., null-terminated array of constant characters) is displayed at the cursor location, and the cursor is advanced to the next location after the string appropriately in the same manner as within a shell. If necessary, the content of the window scrolls upward accordingly, also in the same manner as a shell. The implementation of this function calls <a class="el" href="kernel_8h.html#a08f7518813d0820b8ec1c1392de01954" title="Displays a character at the cursor location, and advances the cursor appropriately. ">output_char()</a> for each character in the string until the null terminator is reached. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>Pointer to the first element in a string that is to be displayed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a08f7518813d0820b8ec1c1392de01954" title="Displays a character at the cursor location, and advances the cursor appropriately. ">output_char()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a08f7518813d0820b8ec1c1392de01954" title="Displays a character at the cursor location, and advances the cursor appropriately. ">output_char()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -1791,13 +1845,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads 1 byte from the specified memory address. </p>
-<p>Reads and returns a BYTE from the memory address addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reads and returns a <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> from the memory address addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 1-byte BYTE value is to be read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 1-byte <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> value is to be read. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The BYTE read from memory address addr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> read from memory address addr. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a4a8f6e8a276b0399a61460880d4aec4f" title="Reads 1 byte from the specified memory address. ">peek_b()</a>, <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> </dd></dl>
 
 </div>
@@ -1817,13 +1871,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads 4 bytes from the memory region starting at the specified memory address. </p>
-<p>Reads and returns a LONG from the memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reads and returns a <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> from the memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 4-byte LONG value is to be read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 4-byte <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> value is to be read. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The LONG read from the 4-byte memory region starting at memory address addr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> read from the 4-byte memory region starting at memory address addr. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a0c1b9e00b9eafd82d022cb9ffd1dede4" title="Reads 4 bytes from the memory region starting at the specified memory address. ">peek_l()</a>, <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> </dd></dl>
 
 </div>
@@ -1843,13 +1897,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads 2 bytes from the memory region starting at the specified memory address. </p>
-<p>Reads and returns a WORD from the memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reads and returns a <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> from the memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 2-byte WORD value is to be read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The memory address from which the 2-byte <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> value is to be read. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The WORD read from the 2-byte memory region starting at memory address addr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> read from the 2-byte memory region starting at memory address addr. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a89c825cbb154f72071dd38cdac44ff47" title="Reads 2 bytes from the memory region starting at the specified memory address. ">peek_w()</a>, <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> </dd></dl>
 
 </div>
@@ -1879,10 +1933,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes 1 byte to memory at the specified memory address. </p>
-<p>Writes value, a 1-byte item of data of type BYTE, to the memory address specified by addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Writes value, a 1-byte item of data of type <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a>, to the memory address specified by addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A MEM_ADDR, or memory address, to which the BYTE is to be written. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A BYTE representing the value which is to be written to memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, or memory address, to which the <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> is to be written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A <a class="el" href="kernel_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Typedef for a single-byte data type. ">BYTE</a> representing the value which is to be written to memory. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1915,10 +1969,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes 4 bytes to the memory region starting at the specified memory address. </p>
-<p>Writes value, a 4-byte item of data of type LONG, to the 4-byte memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Writes value, a 4-byte item of data of type <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a>, to the 4-byte memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A MEM_ADDR, or memory address, to which the LONG is to be written. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A LONG representing the value which is to be written to memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, or memory address, to which the <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> is to be written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A <a class="el" href="kernel_8h.html#a434cb264031f389cbbf1844726748ebc" title="Typedef for an unsigned 4-byte data type. ">LONG</a> representing the value which is to be written to memory. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1951,10 +2005,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes 2 bytes to the memory region starting at the specified memory address. </p>
-<p>Writes value, a 2-byte item of data of type WORD, to the 2-byte memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Writes value, a 2-byte item of data of type <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a>, to the 2-byte memory region starting at address addr. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A MEM_ADDR, or memory address, to which the WORD is to be written. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A WORD representing the value which is to be written to memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A <a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a>, or memory address, to which the <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> is to be written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A <a class="el" href="kernel_8h.html#a197942eefa7db30960ae396d68339b97" title="Typedef for an unsigned 2-byte data type. ">WORD</a> representing the value which is to be written to memory. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1977,13 +2031,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prints the details of all existing TOS processes. </p>
-<p>The name, state, and priority of each existing TOS process is printed, with a special character (e.g., an asterisk) indicating if the process is currently the running process. See the lecture slides on TOS processes for an example of how the output may look like. One possible implementation of this function calls <a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Creates and returns a copy of the calling process. ">print_process()</a> for each of the processes in the PCB array. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The name, state, and priority of each existing TOS process is printed, with a special character (e.g., an asterisk) indicating if the process is currently the running process. See the lecture slides on TOS processes for an example of how the output may look like. One possible implementation of this function calls <a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Prints the details of the specified TOS process. ">print_process()</a> for each of the processes in the <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> to which the process details should be printed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> to which the process details should be printed </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Creates and returns a copy of the calling process. ">print_process()</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, PCB </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a0ba03cb110510187d40043ffd1352d57" title="Prints the details of the specified TOS process. ">print_process()</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="struct__PCB.html">PCB</a> </dd></dl>
 
 </div>
 </div>
@@ -2000,7 +2054,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
@@ -2011,12 +2065,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates and returns a copy of the calling process. </p>
-<p>This function initializes a new TOS process to be an exact copy of the calling process. The program code, heap, and stack are all copied. The new process occupies a different PCB entry and has a different stack frame than the calling process and is in fact a distinct process from the calling process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>, PCB, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a></dd></dl>
-<p>Prints the details of the specified TOS process</p>
+<p>Prints the details of the specified TOS process. </p>
 <p>The name, state, and priority of the TOS process is printed, with a special character (e.g., an asterisk) indicating if the process is currently the running process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> to which the process details should be printed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> to which the process details should be printed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>The process whose details should be printed. </td></tr>
   </table>
   </dd>
@@ -2032,7 +2084,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void* receive </td>
           <td>(</td>
-          <td class="paramtype">PROCESS *&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> *&#160;</td>
           <td class="paramname"><em>sender</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2040,14 +2092,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receives a message. </p>
-<p>If there is a message pending for this process (i.e., one of the open ports owned by this process contains a message from a sender process), this function receives that message and reacts accordingly, depending on whether the sender used <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>. If no message is pending for this process, or if the port is closed, the process becomes <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a> and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. See the inter-process communication lecture slides for more details. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If there is a message pending for this process (i.e., one of the open ports owned by this process contains a message from a sender process), this function receives that message and reacts accordingly, depending on whether the sender used <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>. If no message is pending for this process, or if the port is closed, the process becomes <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a> and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. See the inter-process communication lecture slides for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">sender</td><td>A pointer which is modified by the <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> function to point to the sender PROCESS (as such, this is an output argument). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sender</td><td>A pointer which is modified by the <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> function to point to the sender <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> (as such, this is an output argument). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer passed by the sender process to the content of the message. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> </dd></dl>
 
 </div>
 </div>
@@ -2066,13 +2118,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes the cursor from a window. </p>
-<p>Removes the cursor by displaying a blank character at the cursor location specified by cursor_x and cursor_y of this <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Removes the cursor by displaying a blank character at the cursor location specified by cursor_x and cursor_y of this <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#aa6dcfbefcba8307a0582eb19f633778a" title="Places the cursor at a specific position. ">move_cursor()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#aa6dcfbefcba8307a0582eb19f633778a" title="Places the cursor at a specific position. ">move_cursor()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -2083,7 +2135,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void remove_ready_queue </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>proc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2108,7 +2160,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void reply </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>sender</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2118,11 +2170,11 @@ Variables</h2></td></tr>
 <p>Replies to a message. </p>
 <p>This function causes the receiver process to reply to the sender process. The receiver must have previously received a message from the sender and the sender must be <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. The receiver puts the sender back on the ready queue and then calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to give another process a chance to run. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>The PROCESS which sent the message and is awaiting the reply. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>The <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> which sent the message and is awaiting the reply. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> </dd></dl>
 
 </div>
 </div>
@@ -2168,15 +2220,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a message to the PORT of a receiver process, which is expected to reply to the message. </p>
-<p>This function sends a synchronous message to the destination PORT indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a> and is placed on the send-blocked list until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, at which time the sender becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message is delivered immediately to the receiver and the sender process becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and awaits the receiver's reply. Once the receiver process calls <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process becomes <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and can go back on the ready queue. See the slides on inter-process communication for more details. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, and a reply to the message is expected. </p>
+<p>This function sends a synchronous message to the destination <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a> and is placed on the send-blocked list until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, at which time the sender becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message is delivered immediately to the receiver and the sender process becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and awaits the receiver's reply. Once the receiver process calls <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process becomes <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and can go back on the ready queue. See the slides on inter-process communication for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A PORT owned by the receiver process, which must be open if the message is to be deliverable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the receiver process, which must be open if the message is to be deliverable. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A void pointer to the data contained in the message. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
 
 </div>
 </div>
@@ -2216,11 +2268,36 @@ Variables</h2></td></tr>
 <p>Displays the cursor at the current cursor location. </p>
 <p>Shows the cursor of the window by displaying cursor_char at the current cursor location, specified by (cursor_x, cursor_y). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab406d8dcb6b139a7d87d4feae5e66895" title="Removes the cursor from a window. ">remove_cursor()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ab406d8dcb6b139a7d87d4feae5e66895" title="Removes the cursor from a window. ">remove_cursor()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d8ece954c7a70eb04493321c6e46f3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sleep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_of_ticks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks. </p>
+<p>This function is a wrapper that client processes use to create and send a <a class="el" href="struct__Timer__Message.html">Timer_Message</a> to the timer process, indicating that the client process wishes to sleep for the number of timer ticks indicated by the argument num_of_ticks. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_of_ticks</td><td>Integer specifying the number of timer ticks that the calling process wants to sleep. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__Timer__Message.html">Timer_Message</a> </dd></dl>
 
 </div>
 </div>
@@ -2318,7 +2395,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Causes a process to wait until the specified interrupt occurs. </p>
-<p>The process calling this function will become <a class="el" href="kernel_8h.html#a81b88515a00640cd5475dc031dc4424b" title="This state is assigned to a process that is waiting for an interrupt to occur. ">STATE_INTR_BLOCKED</a> until the interrupt identified by intr_no occurs. When that interrupt occurs, the process is added back to the ready queue. A process can wait for only one interrupt at a time, and only one process can be waiting for a particular interrupt. The only valid values for intr_no are TIMER_IRQ, KEYB_IRQ and COM1_IRQ, corresponding to the timer, keyboard, and COM1 interrupts respectively. Each of these values is indicated by a #define preprocessor directive in <a class="el" href="kernel_8h.html" title="Header file for the TOS kernel. ">kernel.h</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a7095fb363d08f6646611f9a47806647b" title="The number associated with a timer interrupt. ">TIMER_IRQ</a>, <a class="el" href="kernel_8h.html#ab1cd1e736761fd2efc00615782a271e6" title="The number associated with a keyboard interrupt. ">KEYB_IRQ</a>, <a class="el" href="kernel_8h.html#a3685c78b9bd6dd0fa3861807e24a4e1b" title="The number associated with a COM1 interrupt. ">COM1_IRQ</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a>, <a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a> </dd></dl>
+<p>The process calling this function will become <a class="el" href="kernel_8h.html#a81b88515a00640cd5475dc031dc4424b" title="This state is assigned to a process that is waiting for an interrupt to occur. ">STATE_INTR_BLOCKED</a> until the interrupt identified by intr_no occurs. When that interrupt occurs, the process is added back to the ready queue. A process can wait for only one interrupt at a time, and only one process can be waiting for a particular interrupt. The only valid values for intr_no are <a class="el" href="kernel_8h.html#a7095fb363d08f6646611f9a47806647b" title="The number associated with a timer interrupt. ">TIMER_IRQ</a>, <a class="el" href="kernel_8h.html#ab1cd1e736761fd2efc00615782a271e6" title="The number associated with a keyboard interrupt. ">KEYB_IRQ</a> and <a class="el" href="kernel_8h.html#a3685c78b9bd6dd0fa3861807e24a4e1b" title="The number associated with a COM1 interrupt. ">COM1_IRQ</a>, corresponding to the timer, keyboard, and COM1 interrupts respectively. Each of these values is indicated by a #define preprocessor directive in <a class="el" href="kernel_8h.html" title="Header file for the TOS kernel. ">kernel.h</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a7095fb363d08f6646611f9a47806647b" title="The number associated with a timer interrupt. ">TIMER_IRQ</a>, <a class="el" href="kernel_8h.html#ab1cd1e736761fd2efc00615782a271e6" title="The number associated with a keyboard interrupt. ">KEYB_IRQ</a>, <a class="el" href="kernel_8h.html#a3685c78b9bd6dd0fa3861807e24a4e1b" title="The number associated with a COM1 interrupt. ">COM1_IRQ</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a>, <a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a> </dd></dl>
 
 </div>
 </div>
@@ -2524,13 +2601,13 @@ Variables</h2></td></tr>
 <p>Prints content to a window in accordance with the specified format or conversion. </p>
 <p><a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a" title="Prints content to the kernel_window in accordance with the specified format or conversion. ">kprintf()</a> and <a class="el" href="kernel_8h.html#ae02cb6e6121bb801f5a6411769adc6ee" title="Prints content to a window in accordance with the specified format or conversion. ...">wprintf()</a> are the TOS version of the C function printf(), allowing formatted printing or conversion and variable argument lists. Example usages of <a class="el" href="kernel_8h.html#ae02cb6e6121bb801f5a6411769adc6ee" title="Prints content to a window in accordance with the specified format or conversion. ...">wprintf()</a> can be found in the lectures slides. This function is the same as <a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a" title="Prints content to the kernel_window in accordance with the specified format or conversion. ">kprintf()</a>, except that <a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a" title="Prints content to the kernel_window in accordance with the specified format or conversion. ">kprintf()</a> prints to the <a class="el" href="kernel_8h.html#aeb93d089146101ad08f141c0fc2c6b15" title="Pointer to a WINDOW struct for a window that covers the entire screen. ">kernel_window</a>. Supported printf features and conversions include d (decimal), u (unsigned), x (hexadecimal), X (hex with capital letters), o (octal), c (character), s (string), %m.n (field width and precision), %%-m.n (left adjustment), %0m.n (zero-padding), %%*.* (width and precision taken from arguments), and b (binary conversion). The function <a class="el" href="kernel_8h.html#a88ae83b120b2747f3791ef7bc743de62" title="Implements formatted-print features of the wprintf() and kprintf() functions. ">vsprintf()</a> parses the format specifier and optional arguments and creates a character buffer containing the output string correctly formatted in accordance with how printf() behaves. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wnd</td><td>Pointer to the <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct that specifies the window. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Pointer to the string to be printed and which may include format tags. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>Refers to zero or more optional arguments that specify the format(s). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a" title="Prints content to the kernel_window in accordance with the specified format or conversion. ">kprintf()</a>, <a class="el" href="kernel_8h.html#a88ae83b120b2747f3791ef7bc743de62" title="Implements formatted-print features of the wprintf() and kprintf() functions. ">vsprintf()</a>, <a class="el" href="kernel_8h.html#ae430920aa5940d9c9e34a5ec6e5c1ed8" title="Displays a string starting at the cursor location, and advances the cursor appropriately after the en...">output_string()</a>, <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a199a1f701f4cc4fd1c3ff7903a102d7a" title="Prints content to the kernel_window in accordance with the specified format or conversion. ">kprintf()</a>, <a class="el" href="kernel_8h.html#a88ae83b120b2747f3791ef7bc743de62" title="Implements formatted-print features of the wprintf() and kprintf() functions. ">vsprintf()</a>, <a class="el" href="kernel_8h.html#ae430920aa5940d9c9e34a5ec6e5c1ed8" title="Displays a string starting at the cursor location, and advances the cursor appropriately after the en...">output_string()</a>, <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> </dd></dl>
 
 </div>
 </div>
@@ -2540,13 +2617,13 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PROCESS active_proc</td>
+          <td class="memname"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> active_proc</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The actively-running process. </p>
-<p>active_proc is a pointer to the PCB entry for the currently-running process, meaning that this process is STATE_READY and is currently using the CPU. </p><dl class="section see"><dt>See also</dt><dd>PCB, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, PROCESS, <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> </dd></dl>
+<p>active_proc is a pointer to the PCB entry for the currently-running process, meaning that this process is <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and is currently using the CPU. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a5e64f2ad93cc9de92000f884e6e0a8a9" title="An array of twenty PCB structs. ">pcb</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Typedef for a pointer to a PCB struct. ">PROCESS</a>, <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> </dd></dl>
 
 </div>
 </div>
@@ -2560,8 +2637,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>One of the PORTs owned by the COM process to receive messages from user processes. </p>
-<p>This global variable refers to the PORT which is owned by the COM process and receives messages (of type COM_Message) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in init_com(). Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd>init_com(), COM_Message, <a class="el" href="struct__COM__Message.html" title="A struct that holds the contents of a COM message. ">_COM_Message</a> </dd></dl>
+<p>A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the COM process to receive messages from user processes. </p>
+<p>This global variable refers to the <a class="el" href="struct__PORT__DEF.html">PORT</a> which is owned by the COM process and receives messages (of type <a class="el" href="struct__COM__Message.html">COM_Message</a>) from user processes that wish to send and/or receive bytes from the COM1 I/O port. This global is initialized in <a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>. Note that the COM process owns a second port, at which messages from the COM Reader process are received. See the "Device Drivers" lecture slides for more information about the COM Process and COM Reader Process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a667529bb896d3107cb5d62f608dceaa5" title="Initializes the COM subsystem of TOS. ">init_com()</a>, <a class="el" href="struct__COM__Message.html">COM_Message</a>, <a class="el" href="struct__PORT__DEF.html">PORT</a> </dd></dl>
 
 </div>
 </div>
@@ -2576,7 +2653,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A global variable indicating whether interrupts are enabled (TRUE) or disabled (FALSE). </p>
-<p>Some of the older TOS test cases will stop working once support for interrupts is implemented, because of changes made to the implementations of <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> and <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> during the pre-emptive multitasking part of the course. The interrupts_initialized variable is consulted to ensure that <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> and <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> will function correctly whether interrupts are enabled or disabled. The variable is initially set to FALSE. As the assembly instructions associated with <a class="el" href="kernel_8h.html#a532d7d98780162a882090e6c0e1e36fe" title="Assembly instructions that disable the interrupt subsystem of TOS to avoid race conditions. ">DISABLE_INTR</a> and <a class="el" href="kernel_8h.html#a529e0c1767f0b71a5269eeb7b09528cf" title="Assembly instructions that enable the interrupt subsystem of TOS. ">ENABLE_INTR</a> are executed, this variable is updated accordingly. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a050c65e107f0c828f856a231f4b4e788" title="Typedef for true/false values, as an integer. ">BOOL</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a> </dd></dl>
+<p>Some of the older TOS test cases will stop working once support for interrupts is implemented, because of changes made to the implementations of <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> and <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> during the pre-emptive multitasking part of the course. The interrupts_initialized variable is consulted to ensure that <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> and <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> will function correctly whether interrupts are enabled or disabled. The variable is initially set to FALSE. As the assembly instructions associated with <a class="el" href="kernel_8h.html#a532d7d98780162a882090e6c0e1e36fe" title="Assembly instructions that disable the interrupt subsystem of TOS to avoid race conditions. ">DISABLE_INTR</a> and <a class="el" href="kernel_8h.html#a529e0c1767f0b71a5269eeb7b09528cf" title="Assembly instructions that enable the interrupt subsystem of TOS. ">ENABLE_INTR</a> are executed, this variable is updated accordingly. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a050c65e107f0c828f856a231f4b4e788" title="Typedef for true/false values, as an integer. ">BOOL</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a> </dd></dl>
 
 </div>
 </div>
@@ -2590,8 +2667,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pointer to a <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct for a window that covers the entire screen. </p>
-<p>The kernel_window is a pointer to a <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> struct whose members have the following values: x=0, y=0, width=80, height=25, cursor_x=0, cursor_y=0, cursor_char=' '. In the assignment WINDOW* kernel_window = &amp;kernel_window_def shown above, kernel_window_def is a <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a> with the above values. As a result, this variable kernel_window is a pointer to that <a class="el" href="structWINDOW.html" title="Struct that holds properties of a specific window. ">WINDOW</a>. </p>
+<p>Pointer to a <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct for a window that covers the entire screen. </p>
+<p>The kernel_window is a pointer to a <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> struct whose members have the following values: x=0, y=0, width=80, height=25, cursor_x=0, cursor_y=0, cursor_char=' '. In the assignment WINDOW* kernel_window = &amp;kernel_window_def shown above, kernel_window_def is a <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a> with the above values. As a result, this variable kernel_window is initialized with a pointer to that <a class="el" href="structWINDOW.html" title="Contains the properties of a specific window. ">WINDOW</a>. </p>
 
 </div>
 </div>
@@ -2605,8 +2682,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The PORT owned by the keyboard process. </p>
-<p>Processes that need to get a keystroke from the keyboard process send messages to this port. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a48cd3acd7319667c875c62b570b9db49" title="Initializes the keyboard process. ">init_keyb()</a> </dd></dl>
+<p>The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the keyboard process. </p>
+<p>Processes that need to get a keystroke from the keyboard process send messages to this port. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a48cd3acd7319667c875c62b570b9db49" title="Initializes the keyboard process. ">init_keyb()</a>, <a class="el" href="struct__Keyb__Message.html">Keyb_Message</a> </dd></dl>
 
 </div>
 </div>
@@ -2620,8 +2697,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>An array of twenty PCB structs. </p>
-<p>Each element in this array corresponds to the PCB entry for one TOS process. TOS processes are never removed from this array: when a process has completed its task, its state becomes <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a> and it remains in the PCB array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a>, <a class="el" href="struct__PCB.html" title="Struct that holds the information associated with a TOS process. ">_PCB</a> </dd></dl>
+<p>An array of twenty <a class="el" href="struct__PCB.html">PCB</a> structs. </p>
+<p>Each element in this array is a pointer to the PCB data structure for one TOS process. TOS processes are never removed from this array: when a process has completed its task, its state becomes <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a> and it remains in this array. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a>, <a class="el" href="struct__PCB.html">PCB</a> </dd></dl>
 
 </div>
 </div>
@@ -2636,7 +2713,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An array of pointers to PCBs for those processes that are ready to use CPU cycles. </p>
-<p>The ready-queue contains pointers to the PCBs of those processes that are <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>, meaning that they are eligible for CPU cycles. A process in any other state is not eligible to use the CPU, either because it has become a "zombie" process or it is in one of the blocked states. Only one process can use the CPU at any given time, so the ready_queue is consulted by the dispatcher to determine which process should be the next to run. TOS uses priority-based round robin scheduling. The ready queue is an 8-element array, with each element corresponding to one of the priority levels, 0-7. Higher-priority processes are chosen to run before lower-priority processes. Within the same priority level, a round-robin scheduling approach is used; to implement this approach, each PCB in the ready_queue maintains a doubly-linked list of processes, so that within a priority level, the dispatcher will return the next process in this priority level (or, if there is only one process at this priority level, the same process will be returned). See the lecture slide called "Scheduling" for more information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e" title="Selects and returns the next process to run. ">dispatcher()</a>, PCB </dd></dl>
+<p>The ready-queue contains pointers to the PCBs of those processes that are <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>, meaning that they are eligible for CPU cycles. A process in any other state is not eligible to use the CPU, either because it has become a "zombie" process or it is in one of the blocked states. Only one process can use the CPU at any given time, so the ready_queue is consulted by the dispatcher to determine which process should be the next to run. TOS uses priority-based round robin scheduling. The ready queue is an 8-element array, with each element corresponding to one of the priority levels, 0-7. Higher-priority processes are chosen to run before lower-priority processes. Within the same priority level, a round-robin scheduling approach is used; to implement this approach, each PCB in the ready_queue maintains a doubly-linked list of processes, so that within a priority level, the dispatcher will return the next process in this priority level (or, if there is only one process at this priority level, the same process will be returned). See the lecture slide called "Scheduling" for more information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3b26baa874c4de9d0db0020a495f307e" title="Selects and returns the next process to run. ">dispatcher()</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#ab4e099987c910c0a74ddb26ffe7b1774" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a> </dd></dl>
 
 </div>
 </div>
@@ -2650,8 +2727,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>PORT owned by the timer process. </p>
-<p>To use the timer service, a client process sends a Timer_Message to this PORT indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this PORT whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, <a class="el" href="struct__Timer__Message.html" title="A struct containing the information of the message which is sent by client processes to the timer ser...">_Timer_Message</a>, sleep() </dd></dl>
+<p>The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the timer process. </p>
+<p>To use the timer service, a client process sends a Timer_Message to this port indicating the number of timer ticks for which the client process wants to wait. The timer notifier process also messages this port whenever a timer interrupt occurs. See the "Timer" lecture slides for more information. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__Timer__Message.html">Timer_Message</a>, <a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
 
 </div>
 </div>

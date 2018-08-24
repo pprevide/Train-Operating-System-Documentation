@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,13 +88,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A struct that holds the contents of a message to the keyboard process.  
+<p>Holds the contents of a message to the keyboard process.  
  <a href="struct__Keyb__Message.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct that holds the contents of a message to the keyboard process. </p>
-<p>When a user process requests keystrokes that are directed to a specific window, the user process sends a message to the keyboard process. The contents of that message are stored in a <a class="el" href="struct__Keyb__Message.html" title="A struct that holds the contents of a message to the keyboard process. ">_Keyb_Message</a> struct, which includes the window identifier, a pointer to a character for the desired keystroke, and a boolean value indicating whether the calling process should be blocked if no keystroke is available. If so, then the calling process is <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> while it waits for a reply from the Keyboard Process; if not, then the function <a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a> will return 0 immediately if no keystroke is available, so the calling process does not become blocked. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="keyb_8c.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a>, Keyb_Message, <a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a> </dd></dl>
+<div class="textblock"><p>Holds the contents of a message to the keyboard process. </p>
+<p>When a client process requests that a keystroke be directed to a specific window, the client process sends a message to the keyboard process. The contents of that message are contained in this data structure, which includes:<br />
+ (1) the window identifier <br />
+(2) a pointer to a character for the desired keystroke <br />
+(3) a boolean value indicating whether the calling process should be blocked if no keystroke is available. If so, then the client process is <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> while it waits for a reply from the Keyboard Process; if not, then the function <a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a> will return 0 immediately if no keystroke is available, so the calling process does not become blocked. <br />
+<br />
+Note that Keyb_Message is a typedef for "struct _Keyb_Message", where the leading underscore in the struct's name indicates that the typedef Keyb_Message should be used to access this data structure when implementing TOS. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="keyb_8c.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a>, <a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

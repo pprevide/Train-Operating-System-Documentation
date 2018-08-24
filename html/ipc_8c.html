@@ -104,7 +104,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#ae9d255ea2fe47c5ee2c757bf6416227d">create_port</a> ()</td></tr>
 <tr class="memdesc:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new port for the calling process.  <a href="#ae9d255ea2fe47c5ee2c757bf6416227d">More...</a><br /></td></tr>
 <tr class="separator:ae9d255ea2fe47c5ee2c757bf6416227d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a255f0485de01e390d80056a6f0549bf3"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a255f0485de01e390d80056a6f0549bf3">create_new_port</a> (PROCESS owner)</td></tr>
+<tr class="memitem:a255f0485de01e390d80056a6f0549bf3"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a255f0485de01e390d80056a6f0549bf3">create_new_port</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> owner)</td></tr>
 <tr class="memdesc:a255f0485de01e390d80056a6f0549bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new port for the process indicated by the parameter proc.  <a href="#a255f0485de01e390d80056a6f0549bf3">More...</a><br /></td></tr>
 <tr class="separator:a255f0485de01e390d80056a6f0549bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f22fb991371149226f31ddf10f47795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a3f22fb991371149226f31ddf10f47795">open_port</a> (PORT port)</td></tr>
@@ -114,15 +114,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad2213e4e559d438d23552fbd3c2a107a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a port.  <a href="#ad2213e4e559d438d23552fbd3c2a107a">More...</a><br /></td></tr>
 <tr class="separator:ad2213e4e559d438d23552fbd3c2a107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e779a204bd7960376d8f122d5afd5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a70e779a204bd7960376d8f122d5afd5a">send</a> (PORT dest_port, void *data)</td></tr>
-<tr class="memdesc:a70e779a204bd7960376d8f122d5afd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the PORT of a receiver process, which is expected to reply to the message.  <a href="#a70e779a204bd7960376d8f122d5afd5a">More...</a><br /></td></tr>
+<tr class="memdesc:a70e779a204bd7960376d8f122d5afd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, and a reply to the message is expected.  <a href="#a70e779a204bd7960376d8f122d5afd5a">More...</a><br /></td></tr>
 <tr class="separator:a70e779a204bd7960376d8f122d5afd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#aacc4f7df1c840c0e6f109dfde5ff934f">message</a> (PORT dest_port, void *data)</td></tr>
-<tr class="memdesc:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the PORT of a receiver process, from which no reply is expected.  <a href="#aacc4f7df1c840c0e6f109dfde5ff934f">More...</a><br /></td></tr>
+<tr class="memdesc:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, from which no reply is expected.  <a href="#aacc4f7df1c840c0e6f109dfde5ff934f">More...</a><br /></td></tr>
 <tr class="separator:aacc4f7df1c840c0e6f109dfde5ff934f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a57fe8a985abbaec28b7065d0ad3b3e80">receive</a> (PROCESS *sender)</td></tr>
+<tr class="memitem:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a57fe8a985abbaec28b7065d0ad3b3e80">receive</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> *sender)</td></tr>
 <tr class="memdesc:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a message.  <a href="#a57fe8a985abbaec28b7065d0ad3b3e80">More...</a><br /></td></tr>
 <tr class="separator:a57fe8a985abbaec28b7065d0ad3b3e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae559b6ee61d6e596c651dde6028582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#afae559b6ee61d6e596c651dde6028582">reply</a> (PROCESS sender)</td></tr>
+<tr class="memitem:afae559b6ee61d6e596c651dde6028582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#afae559b6ee61d6e596c651dde6028582">reply</a> (<a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> sender)</td></tr>
 <tr class="memdesc:afae559b6ee61d6e596c651dde6028582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to a message.  <a href="#afae559b6ee61d6e596c651dde6028582">More...</a><br /></td></tr>
 <tr class="separator:afae559b6ee61d6e596c651dde6028582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab33da3342afdd7d505cae618be9d5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipc_8c.html#a7ab33da3342afdd7d505cae618be9d5c">init_ipc</a> ()</td></tr>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Closes a port. </p>
-<p>Closes the PORT indicated by the parameter port. Messages can still be sent to a closed port, but they will not be delivered to the receiver. Instead, they are queued for delivery at some later time, after the port has been re-opened. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3f22fb991371149226f31ddf10f47795" title="Opens a port. ">open_port()</a> </dd></dl>
+<p>Closes the <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter port. Messages can still be sent to a closed port, but they will not be delivered to the receiver. Instead, they are queued for delivery at some later time, after the port has been re-opened. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a3f22fb991371149226f31ddf10f47795" title="Opens a port. ">open_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PORT create_new_port </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>proc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a new port for the process indicated by the parameter proc. </p>
-<p>This function creates and returns a new port for the PROCESS indicated by proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd>PORT, PROCESS, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d" title="Creates a new port for the calling process. ">create_port()</a> </dd></dl>
+<p>This function creates and returns a new port for the <a class="el" href="struct__PCB.html">PROCESS</a> indicated by proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#ae9d255ea2fe47c5ee2c757bf6416227d" title="Creates a new port for the calling process. ">create_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -184,7 +184,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a new port for the calling process. </p>
-<p>This function creates and returns a new port for the running process active_proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd>PORT, PROCESS, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8" title="Creates a new port for the process indicated by the parameter proc. ">create_new_port()</a> </dd></dl>
+<p>This function creates and returns a new port for the running process active_proc. The port is initially open. Note that while a process can own multiple ports, each port can be owned by exactly one process. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a087ab3f9b5dff3f23f91a1b6e66e5072" title="The actively-running process. ">active_proc</a>, <a class="el" href="kernel_8h.html#a191b96a6ebaa20de1b58bcd3956bbcd8" title="Creates a new port for the process indicated by the parameter proc. ">create_new_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the global variables associated with inter-process communication. </p>
-<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to initialize the entries of the array of PORTs held by the global variable port[]. Among other things, each element of the array contains a pointer to the next element of the array and a field indicating whether the array entry is being used by a process. See the "IPC" slide deck for more information about these global variables. </p><dl class="section see"><dt>See also</dt><dd>PORT, PORT_DEF </dd></dl>
+<p>This function is called by <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> to initialize the entries of an array of pointers to <a class="el" href="struct__PORT__DEF.html">PORT</a> data structures, and to assign the array to a global variable. Among other things, each element of the array contains a pointer to the next element of the array and a field indicating whether the array entry is being used by a process. See the "IPC" slide deck for more information about the setup of inter-process communication. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a> </dd></dl>
 
 </div>
 </div>
@@ -230,15 +230,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a message to the PORT of a receiver process, from which no reply is expected. </p>
-<p>This function sends a synchronous message to the destination PORT indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, after which time the sender is put back on the ready queue. If the sender becomes blocked, it is placed on the send-blocked list of the receiver, then goes off the ready queue and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message can be delivered immediately and the sender does not become blocked. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, from which no reply is expected. </p>
+<p>This function sends a synchronous message to the destination <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a> until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, after which time the sender is put back on the ready queue. If the sender becomes blocked, it is placed on the send-blocked list of the receiver, then goes off the ready queue and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message can be delivered immediately and the sender does not become blocked. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A PORT owned by the receiver process, which must be open if the message is to be deliverable. See the slides on inter-process communication for more details. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the receiver process, which must be open if the message is to be deliverable. See the slides on inter-process communication for more details. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A void pointer to the data contained in the message. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opens a port. </p>
-<p>Opens the PORT indicated by the parameter port. Only messages that are in an open port can be delivered to the receiver. (Messages can still be sent to a closed port, but they will not be delivered to the receiver; instead, the messages are queued for later delivery.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ad2213e4e559d438d23552fbd3c2a107a" title="Closes a port. ">close_port()</a> </dd></dl>
+<p>Opens the <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter port. Only messages that are in an open port can be delivered to the receiver. (Messages can still be sent to a closed port, but they will not be delivered to the receiver; instead, the messages are queued for later delivery.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#ad2213e4e559d438d23552fbd3c2a107a" title="Closes a port. ">close_port()</a> </dd></dl>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void* receive </td>
           <td>(</td>
-          <td class="paramtype">PROCESS *&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> *&#160;</td>
           <td class="paramname"><em>sender</em></td><td>)</td>
           <td></td>
         </tr>
@@ -276,14 +276,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receives a message. </p>
-<p>If there is a message pending for this process (i.e., one of the open ports owned by this process contains a message from a sender process), this function receives that message and reacts accordingly, depending on whether the sender used <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>. If no message is pending for this process, or if the port is closed, the process becomes <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a> and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. See the inter-process communication lecture slides for more details. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If there is a message pending for this process (i.e., one of the open ports owned by this process contains a message from a sender process), this function receives that message and reacts accordingly, depending on whether the sender used <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>. If no message is pending for this process, or if the port is closed, the process becomes <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a> and calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a>. See the inter-process communication lecture slides for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">sender</td><td>A pointer which is modified by the <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> function to point to the sender PROCESS (as such, this is an output argument). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sender</td><td>A pointer which is modified by the <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> function to point to the sender <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> (as such, this is an output argument). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer passed by the sender process to the content of the message. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a> </dd></dl>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void reply </td>
           <td>(</td>
-          <td class="paramtype">PROCESS&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a>&#160;</td>
           <td class="paramname"><em>sender</em></td><td>)</td>
           <td></td>
         </tr>
@@ -304,11 +304,11 @@ Functions</h2></td></tr>
 <p>Replies to a message. </p>
 <p>This function causes the receiver process to reply to the sender process. The receiver must have previously received a message from the sender and the sender must be <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. The receiver puts the sender back on the ready queue and then calls <a class="el" href="kernel_8h.html#aaae42c37d7e61697646625aafaeae957" title="Implements a context switch in TOS, giving another process a chance to run. ">resign()</a> to give another process a chance to run. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>The PROCESS which sent the message and is awaiting the reply. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>The <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> which sent the message and is awaiting the reply. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a> </dd></dl>
 
 </div>
 </div>
@@ -336,15 +336,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a message to the PORT of a receiver process, which is expected to reply to the message. </p>
-<p>This function sends a synchronous message to the destination PORT indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a> and is placed on the send-blocked list until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, at which time the sender becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message is delivered immediately to the receiver and the sender process becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and awaits the receiver's reply. Once the receiver process calls <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process becomes <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and can go back on the ready queue. See the slides on inter-process communication for more details. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a message to the <a class="el" href="struct__PORT__DEF.html">PORT</a> of a receiver process, and a reply to the message is expected. </p>
+<p>This function sends a synchronous message to the destination <a class="el" href="struct__PORT__DEF.html">PORT</a> indicated by the parameter dest_port. The void pointer data is the content of the message. If the receiver process has not yet called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, the sender becomes <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a> and is placed on the send-blocked list until the receiver calls <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, at which time the sender becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>. If the receiver process had already called <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, then the message is delivered immediately to the receiver and the sender process becomes <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a> and awaits the receiver's reply. Once the receiver process calls <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a>, the sender process becomes <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a> and can go back on the ready queue. See the slides on inter-process communication for more details. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A PORT owned by the receiver process, which must be open if the message is to be deliverable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>A <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the receiver process, which must be open if the message is to be deliverable. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A void pointer to the data contained in the message. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>PORT, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct__PORT__DEF.html">PORT</a>, <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>, <a class="el" href="kernel_8h.html#a57fe8a985abbaec28b7065d0ad3b3e80" title="Receives a message. ">receive()</a>, <a class="el" href="kernel_8h.html#afae559b6ee61d6e596c651dde6028582" title="Replies to a message. ">reply()</a> </dd></dl>
 
 </div>
 </div>

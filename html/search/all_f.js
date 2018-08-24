@@ -4,6 +4,7 @@ var searchData=
   ['set_5ftrain_5fspeed',['set_train_speed',['../kernel_8h.html#a0d4958487f6319a4e9deed6ae1962be3',1,'kernel.h']]],
   ['show_5fcursor',['show_cursor',['../kernel_8h.html#a74f2037d58ac553379390c7966e09bf1',1,'show_cursor(WINDOW *wnd):&#160;window.c'],['../window_8c.html#a74f2037d58ac553379390c7966e09bf1',1,'show_cursor(WINDOW *wnd):&#160;window.c']]],
   ['size_5ft',['size_t',['../kernel_8h.html#a7619b847aeded8a6d14cbfa212b2cdfb',1,'kernel.h']]],
+  ['sleep',['sleep',['../kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c',1,'sleep(int num_of_ticks):&#160;timer.c'],['../timer_8c.html#aec3ffac6244c790239293a8b055a9a75',1,'sleep(int ticks):&#160;timer.c']]],
   ['start_5fpong',['start_pong',['../kernel_8h.html#af85f715505e3c0142953633dc5f7b763',1,'start_pong():&#160;pong.c'],['../pong_8c.html#af85f715505e3c0142953633dc5f7b763',1,'start_pong():&#160;pong.c']]],
   ['start_5fshell',['start_shell',['../kernel_8h.html#a22a370c075a0550a77d5954725f01f96',1,'kernel.h']]],
   ['state_5fintr_5fblocked',['STATE_INTR_BLOCKED',['../kernel_8h.html#a81b88515a00640cd5475dc031dc4424b',1,'kernel.h']]],

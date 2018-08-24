@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,13 +88,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A data structure that describes an x86 interrupt.  
+<p>Holds the data fields associated with an x86 interrupt.  
  <a href="structIDT.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A data structure that describes an x86 interrupt. </p>
-<p>This struct holds information associated with an <a class="el" href="structIDT.html" title="A data structure that describes an x86 interrupt. ">IDT</a> entry. For each of the 256 interrupts in the x86, the Interrupt Descriptor Table contains an entry (i.e., an Interrupt Descriptor) that defines the 16-bit selector, attributes (16 bits combined), and 32-bit offset for that interrupt. See the "Interrupts" lecture slides for more information about the members of this struct. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a> </dd></dl>
+<div class="textblock"><p>Holds the data fields associated with an x86 interrupt. </p>
+<p>This struct holds information associated with an <a class="el" href="structIDT.html" title="Holds the data fields associated with an x86 interrupt. ">IDT</a> ("Interrupt Descriptor Table") entry. For each of the 256 interrupts in the x86, the Interrupt Descriptor Table contains an entry (i.e., an Interrupt Descriptor) that defines the 16-bit selector, attributes (16 bits combined), and 32-bit offset for that interrupt. See the "Interrupts" lecture slides for more information about the members of this struct. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#add2a7dc4c8b814a7e11ffc87780df7d7" title="Initializes the IDT entry for a single interrupt. ">init_idt_entry()</a>, <a class="el" href="kernel_8h.html#a88ada49c1954d38252049786595d9a5f" title="Initializes the interrupt subsystem of TOS. ">init_interrupts()</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

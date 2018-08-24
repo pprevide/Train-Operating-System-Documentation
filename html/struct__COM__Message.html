@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,13 +88,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A struct that holds the contents of a COM message.  
+<p>Holds the contents of a COM message.  
  <a href="struct__COM__Message.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct that holds the contents of a COM message. </p>
-<p>To read or write a byte to the I/O port COM1, a process sends a message to the COM process. The contents of that message are stored in a COM_Message struct. The members of this struct include the following: </p><table class="doxtable">
+<div class="textblock"><p>Holds the contents of a COM message. </p>
+<p>To read or write a byte from/to the I/O port COM1, a process sends a message to the COM process. The contents of that message are contained in this struct. (Note that COM_Message is a typedef for "struct _COM_Message", where the leading underscore in the struct's name indicates that the typedef COM_Message should be used to access this data structure when implementing TOS.) <br />
+<br />
+ The members of this struct include the following: </p><table class="doxtable">
 <tr>
 <td>char* output_buffer </td><td>string to be output to the COM1 port  </td></tr>
 <tr>
@@ -103,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td>int len_input_buffer </td><td>the number of bytes to be read from the COM1 port  </td></tr>
 </table>
-<dl class="section see"><dt>See also</dt><dd>COM_Message, <a class="el" href="com_8c.html#a3235fc563e60489c99c3a3959ead5f24" title="One of the PORTs owned by the COM process to receive messages from user processes. ">com_port</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="com_8c.html#a3235fc563e60489c99c3a3959ead5f24" title="A PORT owned by the COM process to receive messages from user processes. ">com_port</a>, <a class="el" href="kernel_8h.html#a8982f081d8608e775b0739cde65373d5" title="The base address of the I/O ports associated with COM1. ">COM1_PORT</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

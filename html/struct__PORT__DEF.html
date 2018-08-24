@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,30 +88,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A data structure that holds the members associated with a TOS process's port, used for inter-process communication.  
+<p>Holds information associated with a TOS process's port, used for inter-process communication.  
  <a href="struct__PORT__DEF.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A data structure that holds the members associated with a TOS process's port, used for inter-process communication. </p>
-<p>The underscore in the struct's name indicates that it will not be necessary to refer directly by name to this data structure when implementing TOS. Rather, the typedef PORT can be used to access this struct more conveniently. The members of this struct are described below:</p>
+<div class="textblock"><p>Holds information associated with a TOS process's port, used for inter-process communication. </p>
+<p>Each process in TOS owns one or more ports. While each process can own multiple ports, a port can only be owned by exactly one process. The maximum number of ports across all TOS processes is defined as <a class="el" href="kernel_8h.html#a40ad70cc6e2125af9340a4bc26a83764" title="Specifies the maximum number of PORTs supported in TOS. ">MAX_PORTS</a> (i.e., <a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014" title="Specifies the maximum number of TOS processes that can be created. ">MAX_PROCS</a>*2, equal to 40). <br />
+<br />
+Note that PORT is a typedef for "struct _PORT_DEF*", where the leading underscores in the struct's name indicate that the typedef PORT should be used when implementing TOS. (The "_PORT_DEF" link in the table below and throughout this documentation will redirect to this page.) <br />
+<br />
+The members of this struct are described below:</p>
 <table class="doxtable">
 <tr>
-<td>unsigned magic </td><td>A "magic" value used to verify that the record being accessed is indeed a PORT entry. The value is given by <a class="el" href="kernel_8h.html#a5a7162a4cf2bc5e6950e2bf63c1ca47d" title="A value used to verify that a data structure is a PORT. ">MAGIC_PORT</a>.   </td></tr>
+<td>unsigned magic </td><td>A "magic" value used to verify that the record being accessed is indeed a PORT entry. The value is given by <a class="el" href="kernel_8h.html#a5a7162a4cf2bc5e6950e2bf63c1ca47d" title="A value used to verify that a data structure being accessed is a PORT. ">MAGIC_PORT</a>.   </td></tr>
 <tr>
-<td>unsigned used </td><td>An unsigned integer indicating whether the port slot in the port[] array is being used or not.  </td></tr>
+<td>unsigned used </td><td>An unsigned integer indicating whether the entry in the array of ports is being used or not. The array of ports is initialized by <a class="el" href="kernel_8h.html#a7ab33da3342afdd7d505cae618be9d5c" title="Initializes the global variables associated with inter-process communication. ">init_ipc()</a>.  </td></tr>
 <tr>
 <td>unsigned open </td><td>An unsigned integer indicating whether the port is open or closed.  </td></tr>
 <tr>
-<td>PROCESS owner </td><td>The process which owns this port. A PORT can have exactly one owner.  </td></tr>
+<td>PROCESS owner </td><td>The process which owns this port. A port can have exactly one owner.  </td></tr>
 <tr>
-<td>PROCESS blocked_list_head </td><td>The first process on the send-blocked list of this port.  </td></tr>
+<td><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> blocked_list_head </td><td>The first process on the send-blocked list of this port.  </td></tr>
 <tr>
-<td>PROCESS blocked_list_tail </td><td>The last process on the send-blocked list of this port. The tail of the list is maintained in order to efficiently add new processes to the end of the list.   </td></tr>
+<td><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> blocked_list_tail </td><td>The last process on the send-blocked list of this port. The tail of the list is maintained in order to efficiently add new processes to the end of the list.   </td></tr>
 <tr>
-<td>struct <a class="el" href="struct__PORT__DEF.html" title="A data structure that holds the members associated with a TOS process&#39;s port, used for inter-process ...">_PORT_DEF</a> *next </td><td>The next port (if any) owned by the owner of this port.  </td></tr>
+<td>struct <a class="el" href="struct__PORT__DEF.html" title="Holds information associated with a TOS process&#39;s port, used for inter-process communication. ">_PORT_DEF</a> *next </td><td>The next port (if any) owned by the owner of this port.  </td></tr>
 </table>
-<dl class="section see"><dt>See also</dt><dd>PORT, PORT_DEF </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386" title="Typedef for a pointer to a PCB struct. ">PROCESS</a>, <a class="el" href="struct__PCB.html">PCB</a>, <a class="el" href="kernel_8h.html#a7ab33da3342afdd7d505cae618be9d5c" title="Initializes the global variables associated with inter-process communication. ">init_ipc()</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

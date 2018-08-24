@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Implements the entry point for TOS operation.  
+<p>The entry point for TOS execution.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kernel_8h.html">kernel.h</a>&gt;</code><br />
 </div><table class="memberdecls">
@@ -106,7 +106,7 @@ Functions</h2></td></tr>
 <tr class="separator:a017bb803a0e9e7782bff19e961ec700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements the entry point for TOS operation. </p>
+<div class="textblock"><p>The entry point for TOS execution. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a017bb803a0e9e7782bff19e961ec700d"></a>
 <div class="memitem">
@@ -122,8 +122,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The entry point of TOS unless running in test mode. </p>
-<p>At the end of the boot sequence, TOS starts executing at this function. The responsibilities of this function are to turn off the VGA hardware cursor, to initialize the various subsystems of TOS, and to start a shell so that the user can enter commands. Lastly, this function causes the boot process to enter the state <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a>.<br />
-You compile TOS using either "make" or "make tests". The latter will build a testing kernel, and when TOS runs, the <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a> function in the test directory, rather than this <a class="el" href="main_8c.html#a017bb803a0e9e7782bff19e961ec700d" title="The entry point of TOS unless running in test mode. ">kernel_main()</a>, will execute. </p>
+<p>At the end of the boot sequence, TOS starts executing at this function. The responsibilities of this function are to turn off the VGA hardware cursor, to initialize the various subsystems of TOS, and to start a shell so that the user can enter commands. Lastly, this function causes the boot process to enter the state <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a>.<br />
+You compile TOS using either "make" or "make tests". The latter will build a testing kernel, and when TOS runs, the "kernel_main" function in the test directory, rather than this function, will execute. </p>
 
 </div>
 </div>

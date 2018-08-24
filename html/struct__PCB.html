@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>TOS API: PROCESS Struct Reference</title>
+<title>TOS API: PCB Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -85,41 +84,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">PROCESS Struct Reference</div>  </div>
+<div class="title">PCB Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Struct that holds the information associated with a TOS process.  
+<p>Holds the information associated with a TOS process.  
  <a href="struct__PCB.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct that holds the information associated with a TOS process. </p>
-<p>This struct is used to store information about a TOS process. Each entry in the pcb[] array is one of these structs. The members of this struct are as follows: </p><table class="doxtable">
+<div class="textblock"><p>Holds the information associated with a TOS process. </p>
+<p>This struct is used to store information about a TOS process. Each element of the <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array is a pointer to one of these structs. The members of this struct are as follows: </p><table class="doxtable">
 <tr>
-<td>unsigned magic </td><td>A "magic" value used to verify that the record containing this value is indeed a PCB entry. The value is given by <a class="el" href="kernel_8h.html#a558a765eeee1053f8664ea223e85dd95" title="A value used to verify that a data structure is a PCB entry. ">MAGIC_PCB</a>.   </td></tr>
+<td>unsigned magic </td><td>A "magic" value used to verify that the record containing this value is indeed a PCB entry. The value is given by <a class="el" href="kernel_8h.html#a558a765eeee1053f8664ea223e85dd95" title="A value used to verify that a data structure being accessed is a PCB. ">MAGIC_PCB</a>.   </td></tr>
 <tr>
-<td>unsigned used </td><td>An integer value indicating whether this PCB entry in the pcb[] array has been assigned to a process yet. Once assigned, this PCB entry is never freed up or re-assigned to a different process.   </td></tr>
+<td>unsigned used </td><td>An integer value indicating whether this PCB entry in the <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> array has been assigned to a process yet. Once assigned, this PCB entry is never freed up or re-assigned to a different process.   </td></tr>
 <tr>
-<td>unsigned short priority </td><td>An integer from 0 to 7 corresponding to the priority leve of this process.  </td></tr>
+<td>unsigned short priority </td><td>An integer from 0 to 7 corresponding to the priority level of this process.  </td></tr>
 <tr>
-<td>unsigned short state </td><td>An integer associated by "define" directives to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>, <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a>, <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a>, <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a>, <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>, <a class="el" href="kernel_8h.html#a81b88515a00640cd5475dc031dc4424b" title="This state is assigned to a process that is waiting for an interrupt to occur. ">STATE_INTR_BLOCKED</a>, OR <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready queue and will never run again...">STATE_ZOMBIE</a>.   </td></tr>
+<td>unsigned short state </td><td>An integer associated by "define" directives to <a class="el" href="kernel_8h.html#aa74af0876332d1a6258cff9745a1bd53" title="This state is assigned to processes that are eligible to run and are ready to use CPU cycles...">STATE_READY</a>, <a class="el" href="kernel_8h.html#ac2a702a7f1c65e77a83166f4642ae6e7" title="This state is assigned to a process that has called send(), but the receiver process has not yet call...">STATE_SEND_BLOCKED</a>, <a class="el" href="kernel_8h.html#ac08fbd3b65bb3ea13b91882b70606e0e" title="This state is assigned to a process that has called receive(), but there are no messages pending from...">STATE_RECEIVE_BLOCKED</a>, <a class="el" href="kernel_8h.html#a16679ae7e3517177c16893143870a20f" title="This state is assigned to a process that has called message(), and the receiver process has not yet c...">STATE_MESSAGE_BLOCKED</a>, <a class="el" href="kernel_8h.html#a600b8498ae32f931e812309e3ea0b715" title="This state is assigned to a sending process in the situation where the process has called send() and ...">STATE_REPLY_BLOCKED</a>, <a class="el" href="kernel_8h.html#a81b88515a00640cd5475dc031dc4424b" title="This state is assigned to a process that is waiting for an interrupt to occur. ">STATE_INTR_BLOCKED</a>, or <a class="el" href="kernel_8h.html#a8e13ad68fa4d5752084a5ef0e0085a66" title="This state is assigned to processes that are permanently off the ready_queue and will never run again...">STATE_ZOMBIE</a>.   </td></tr>
 <tr>
-<td>MEM_ADDR esp </td><td>The value of the stack pointer for this process.  </td></tr>
+<td><a class="el" href="kernel_8h.html#a5de4d864680acdb06c6f6fe11cc3d7d8" title="Typedef for memory addresses within the main memory used by TOS. ">MEM_ADDR</a> esp </td><td>The value of the stack pointer for this process.  </td></tr>
 <tr>
-<td>PROCESS param_proc </td><td>A temporary storage location for the PROCESS that was passed as an input to <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>.  </td></tr>
+<td><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> param_proc </td><td>A temporary storage location for the <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> that was passed as an input to <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>.  </td></tr>
 <tr>
-<td>void* param_data </td><td>A temporary storage location for the data that was passed as an input to <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, which is expected to reply to the message...">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>.  </td></tr>
+<td>void* param_data </td><td>A temporary storage location for the data that was passed as an input to <a class="el" href="kernel_8h.html#a70e779a204bd7960376d8f122d5afd5a" title="Sends a message to the PORT of a receiver process, and a reply to the message is expected. ">send()</a> or <a class="el" href="kernel_8h.html#aacc4f7df1c840c0e6f109dfde5ff934f" title="Sends a message to the PORT of a receiver process, from which no reply is expected. ">message()</a>.  </td></tr>
 <tr>
-<td>PORT first_port </td><td>The first PORT in a singly-linked list of PORTs owned by this process.  </td></tr>
+<td><a class="el" href="struct__PORT__DEF.html">PORT</a> first_port </td><td>The first port in a singly-linked list of ports owned by this process.  </td></tr>
 <tr>
-<td>PROCESS next_blocked </td><td>The next PROCESS in the send-blocked list of processes.  </td></tr>
+<td><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> next_blocked </td><td>The next process in the send-blocked list of processes.  </td></tr>
 <tr>
-<td>PROCESS next, PROCESS prev </td><td>The next and previous processes, used for maintaining the doubly-linked list at each priority level of the <a class="el" href="dispatch_8c.html#ab3fad811f8b43ab5a4533ce91a658be1" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>.  </td></tr>
+<td><a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> next, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> prev </td><td>The next and previous processes, used for maintaining the doubly-linked list at each priority level of the <a class="el" href="dispatch_8c.html#ab3fad811f8b43ab5a4533ce91a658be1" title="An array of pointers to PCBs for those processes that are ready to use CPU cycles. ">ready_queue</a>.  </td></tr>
 <tr>
 <td>char* name </td><td>The name of this process, as a character array.  </td></tr>
 </table>
-<p>The array pcb[] holds 20 of these PCB structs. The typedef PCB is created to serve as another name for this struct. The underscore in the name <a class="el" href="struct__PCB.html" title="Struct that holds the information associated with a TOS process. ">_PCB</a> indicates that it will not be necessary to refer directly to the PCB struct when implementing the TOS API. </p><dl class="section see"><dt>See also</dt><dd>PCB, PROCESS </dd></dl>
+<p>The capacity of the array <a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a> is indicated by <a class="el" href="kernel_8h.html#a0e92bfcd9e51ca39bbebc3dfb9c16014" title="Specifies the maximum number of TOS processes that can be created. ">MAX_PROCS</a> to be 20. (Note that PCB is actually a typedef for "struct _PCB", where the leading underscore in the struct's name indicates that the typedef PCB should be used when implementing the TOS API.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="process_8c.html#aa13757c49c1256b766ebc3d259ed94a3">pcb</a>, <a class="el" href="kernel_8h.html#a831d87f38811800ce0698bbe85e6b386">PROCESS</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->

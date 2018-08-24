@@ -112,7 +112,7 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:afc32d8217e2da0da36dc851cbc97cdac"><td class="memItemLeft" align="right" valign="top">PORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keyb_8c.html#afc32d8217e2da0da36dc851cbc97cdac">keyb_port</a></td></tr>
-<tr class="memdesc:afc32d8217e2da0da36dc851cbc97cdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PORT owned by the keyboard process.  <a href="#afc32d8217e2da0da36dc851cbc97cdac">More...</a><br /></td></tr>
+<tr class="memdesc:afc32d8217e2da0da36dc851cbc97cdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the keyboard process.  <a href="#afc32d8217e2da0da36dc851cbc97cdac">More...</a><br /></td></tr>
 <tr class="separator:afc32d8217e2da0da36dc851cbc97cdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -132,7 +132,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the keyboard process. </p>
-<p>This process creates the keyboard process and assigns the PORT returned by the call to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before PORTs are covered...">create_process()</a> to the global variable keyb_port. Note: this process must be called after the initialization of the Window Manager via <a class="el" href="kernel_8h.html#adee9719f3126c238ba343ac0d6b40d6a" title="Initializes the Window Manager service. ">init_wm()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a>, <a class="el" href="kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a> </dd></dl>
+<p>This process creates the keyboard process and assigns the <a class="el" href="struct__PORT__DEF.html">PORT</a> returned by the call to <a class="el" href="kernel_8h.html#ae982573084c63244f2b0c4f8acb043f7" title="Creates a new TOS process and returns the PORT owned by the new process (or, before ports are covered...">create_process()</a> to the global variable keyb_port. Note: this process must be called after the initialization of the Window Manager via <a class="el" href="kernel_8h.html#adee9719f3126c238ba343ac0d6b40d6a" title="Initializes the Window Manager service. ">init_wm()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a5703cd456b7a86eac9a03b4dce660b34" title="Queries the keyboard process for the next keystroke. ">keyb_get_keystroke()</a>, <a class="el" href="kernel_8h.html#afc32d8217e2da0da36dc851cbc97cdac" title="The PORT owned by the keyboard process. ">keyb_port</a> </dd></dl>
 
 </div>
 </div>
@@ -183,8 +183,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The PORT owned by the keyboard process. </p>
-<p>Processes that need to get a keystroke from the keyboard process send messages to this port. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a48cd3acd7319667c875c62b570b9db49" title="Initializes the keyboard process. ">init_keyb()</a> </dd></dl>
+<p>The <a class="el" href="struct__PORT__DEF.html">PORT</a> owned by the keyboard process. </p>
+<p>Processes that need to get a keystroke from the keyboard process send messages to this port. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a48cd3acd7319667c875c62b570b9db49" title="Initializes the keyboard process. ">init_keyb()</a>, <a class="el" href="struct__Keyb__Message.html">Keyb_Message</a> </dd></dl>
 
 </div>
 </div>

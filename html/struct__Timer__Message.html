@@ -65,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,13 +88,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A struct containing the information of the message which is sent by client processes to the timer service.  
+<p>Contains the information of the message which is sent by a client process to the timer service.  
  <a href="struct__Timer__Message.html#details">More...</a></p>
 
 <p><code>#include &lt;kernel.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct containing the information of the message which is sent by client processes to the timer service. </p>
-<p>The only member of this struct is the number of timer ticks that the client process wants to sleep. </p><dl class="section see"><dt>See also</dt><dd>Timer_Message, sleep() </dd></dl>
+<div class="textblock"><p>Contains the information of the message which is sent by a client process to the timer service. </p>
+<p>The only member of this struct is the number of timer ticks that the client process wants to sleep. (Note that Timer_Message is a typedef for "struct _Timer_Message", where the leading underscore in the struct's name indicates that the typedef Timer_Message should be used to access this data structure when implementing TOS.) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="kernel_8h.html#a2d8ece954c7a70eb04493321c6e46f3c" title="Puts the calling process to sleep (off the ready queue) for a specified number of timer ticks...">sleep()</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.11-->
 <!-- start footer part -->
